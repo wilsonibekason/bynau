@@ -18,3 +18,8 @@
   font-family: Simsun;
   src: url("../public/font/SIMSUN.ttf");
 }
+
+.delete{
+  background-color: #859fc7;
+  color: #a3b5cf;
+}

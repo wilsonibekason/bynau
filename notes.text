@@ -1,0 +1,25 @@
+
+navbar logo container
+display: block;
+width: 166px;
+height: 40px;
+text-indent: -999em;
+margin: 0 auto;
+overflow: hidden;
+}
+
+cart container styles
+background: #ff4747;
+max-width: 25px;
+min-width: 20px;
+height: 20px;
+color: #fff;
+border-radius: 10px;
+position: absolute;
+top: -5px;
+left: 22px;
+font-size: 12px;
+line-height: 20px;
+text-align: center;
+padding: 0 2px;
+}

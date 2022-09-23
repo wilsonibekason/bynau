@@ -1,6 +1,8 @@
 {
   "name": "binau",
   "private": true,
+  "description": "Bynau is an online professional ecommerce where people can have 3d  with wonderful and simple shopping experience, the can order, post, add short videos, have followers all over the world, also they would be presented with a professional dashboard to manage and organise their sales and purchases",
+  "repository": "github.com/wilsonibekason/bynau",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,8 +11,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.2",
+    "@reduxjs/toolkit": "^1.8.5",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "axios": "^0.27.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.1",
+    "react-transition-group": "^4.4.5",
+    "react-uuid": "^1.0.3",
+    "redux": "^4.2.0",
+    "redux-logger": "^3.0.6",
+    "swiper": "^8.4.2",
+    "tailwind-scrollbar": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
