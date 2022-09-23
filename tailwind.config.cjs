@@ -20,9 +20,11 @@ module.exports = {
       },
       colors: {
         deepGray: "#3a3e4a",
+        darkRed: "#ff4747",
       },
       fontSize: {
         main: ["14px", "10px"],
+        xss: ["12px", "10px"],
       },
       maxWidth: {
         one: "10%",
