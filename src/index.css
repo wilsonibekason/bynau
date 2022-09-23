@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: Arial;
+  src: url('../public/font/ARIBL0.ttf');
+}
+@font-face {
+  font-family: Helvetica;
+  src: url("../public/font/Helvetica\ Neue\ Medium\ Extended.otf");
+}
+
+@font-face {
+  font-family: Simsun;
+  src: url("../public/font/SIMSUN.ttf");
+}
