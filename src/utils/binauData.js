@@ -178,3 +178,83 @@ export const viewDisplayCarousel = [
     link: "",
   },
 ];
+
+export const viewCarouselAdData = [
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S5015135982f84261b8ed402e18b5b0edP.jpg_120x120Q90.jpg_.webp",
+    price: "2.44",
+    discount: "2000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S7b44e0de4807473295eed5100dc22ad08.jpg_120x120Q90.jpg_.webp",
+    price: "30",
+    discount: "4000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S7466a7e0476c42a5bccf602bfc187d17l.jpg_120x120Q90.jpg_.webp",
+    price: "23",
+    discount: "5000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/Sb462e23c63664774ab37abfc0f3a29daT.jpg_120x120Q90.jpg_.webp",
+    price: "10",
+    discount: "6000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S2ddd8f1c37714944add72b5ec7540b61l.jpg_120x120Q90.jpg_.webp",
+    price: "20",
+    discount: "8000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S7845f87951e84a02b1924f7926aecbc9f.jpg_120x120Q90.jpg_.webp",
+    price: "10",
+    discount: "7000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S228f4713863348078bfa8bd355859e62Y.jpg_120x120Q90.jpg_.webp",
+    price: "36",
+    discount: "10000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/Hbf0b9918ed904143b59de64e036917d0L.jpg_120x120Q90.jpg_.webp",
+    price: "50",
+    discount: "6000",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S0229aeeaa1dc42c096e2682dd2413da67.jpg_120x120Q90.jpg_.webp",
+    price: "34",
+    discount: "900",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S9358d995a93244dda419a4ab63577e18d.jpg_120x120Q90.jpg_.webp",
+    price: "32",
+    discount: "900",
+    id: uuid(),
+  },
+  {
+    image:
+      "https://ae04.alicdn.com/kf/S0e5827b45a014ae69f07b5986b484cc8S.jpg_120x120Q90.jpg_.webp",
+    price: "44",
+    discount: "900",
+    id: uuid(),
+  },
+];

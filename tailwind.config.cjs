@@ -70,10 +70,52 @@ module.exports = {
         eight: "80%",
         nine: "90%",
       },
+      minHeight: {
+        one: "10%",
+        two: "20%",
+        three: "30%",
+        four: "40%",
+        five: "50%",
+        six: "60%",
+        seven: "70%",
+        eight: "80%",
+        nine: "90%",
+      },
+      height: {
+        one: "10%",
+        two: "20%",
+        three: "30%",
+        four: "40%",
+        five: "50%",
+        six: "60%",
+        seven: "70%",
+        eight: "80%",
+        nine: "90%",
+      },
       inset: {
         r: "right-0",
       },
+      keyframes: {
+        "slide-animate": {
+          "0%": {
+            "-moz-transform": "translateX(0%)",
+            transform: "translateX(0%)",
+            "-webkit-transform": "translateX(0%)",
+          },
+          "100%": {
+            "-moz-transform": "translateX(-100%)",
+            transform: "translateX(-100%)",
+            "-webkit-transform": "translateX(-100%)",
+          },
+        },
+      },
+      animation: {
+        "slide-animate": "slide-animate 15s linear infinite alternate",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

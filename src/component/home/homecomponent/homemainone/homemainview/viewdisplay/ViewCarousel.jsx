@@ -25,29 +25,6 @@ const ViewCarousel = () => {
     <>
       <div className={`max-w-nine w-full`}>
         <Swiper
-          //   autoplay={{
-          //     delay: 500,
-          //     disableOnInteraction: false,
-          //   }}
-          //   spaceBetween={50}
-          //   slidesPerView={1}
-          //   navigation
-          //   effect="fade"
-          //   loop
-          //   draggable={true}
-          //   speed={500}
-          //   pagination={{ enabled: false }}
-          //   Scrollbar={{ draggable: true }}
-          //   onSwiper={(swiper) => console.log(swiper)}
-          //   onSlideChange={() => console.log("slider has changed")}
-          //   modules={[
-          //     Navigation,
-          //     EffectFade,
-          //     Pagination,
-          //     Scrollbar,
-          //     A11y,
-          //     Autoplay,
-          //   ]}
           direction="horizontal"
           speed={1000}
           loop
@@ -69,7 +46,7 @@ const ViewCarousel = () => {
           {viewDisplayCarousel.map((item) => {
             return (
               <SwiperSlide>
-                <div className={`rounded-lg w-full h-[300px] max-h-[350px]`}>
+                <div className={`rounded-lg w-full h-[250px] max-h-[300px]`}>
                   <img
                     src={item.Image}
                     alt=""

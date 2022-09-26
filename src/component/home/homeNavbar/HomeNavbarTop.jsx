@@ -7,14 +7,20 @@ import styles, {
 } from "../../../styles/bynauCustomStyles/bynauCustomStyles";
 
 const HomeNavbarTop = () => {
-  const { flexRowCenterBetween, flexRow, flexCenter, flexRowCenter } =
-    flexLayout;
+  const {
+    flexRowCenterBetween,
+    flexRow,
+    flexCenter,
+    flexRowCenter,
+    flexAround,
+    flexEvenly,
+  } = flexLayout;
   const { borderR2 } = styles;
   const { BsCart3, FiSearch, BiDownArrow } = useIcons();
   const { mainText } = textStyles;
   return (
     <>
-      <div className={`${flexRowCenterBetween} `}>
+      <div className={`${flexAround} `}>
         <div className={`w-44 -my-5`}>
           <img
             src={logo}

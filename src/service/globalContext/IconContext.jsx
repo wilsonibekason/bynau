@@ -15,6 +15,7 @@ import { IoMdMan, IoMdWoman, IoMdPhonePortrait } from "react-icons/io";
 import { GiJeweledChalice, GiMirrorMirror, GiTyre } from "react-icons/gi";
 import { SiStmicroelectronics } from "react-icons/si";
 import { VscTools } from "react-icons/vsc";
+import { RiArrowRightSFill } from "react-icons/ri";
 
 export const IconGlobalContext = createContext({});
 
@@ -44,6 +45,7 @@ export const IconProvider = ({ children }) => {
         SiStmicroelectronics,
         VscTools,
         //
+        RiArrowRightSFill,
       }}
     >
       {children}

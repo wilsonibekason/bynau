@@ -5,6 +5,7 @@ import styles, {
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
 import { viewDisplayData } from "../../../../../../utils/binauData";
 import ViewCarousel from "./ViewCarousel";
+import ViewCarouselAd from "./ViewCarouselAd";
 
 const ViewDisplay = () => {
   const { flexCol, flexCenter, flexRowCenter } = flexLayout;
@@ -27,7 +28,9 @@ const ViewDisplay = () => {
           <div>
             <ViewCarousel />
           </div>
-          <div></div>
+          <div>
+            <ViewCarouselAd />
+          </div>
         </div>
       </div>
     </>

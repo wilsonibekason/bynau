@@ -9,6 +9,7 @@ const styles = {
   borderR2: "border-r border-solid border-gray-400 w-2 h-8",
   transition: "transition-all ease-in-out duration-600 delay-300",
   transitionLight: "transition-all ease-in-out duration-300 delay-100",
+  imageCustom: "w-full h-full object-cover ",
 };
 export const flexLayout = {
   flexBetween: "flex justify-between ",
@@ -22,6 +23,7 @@ export const flexLayout = {
   flexCenter: "flex justify-center items-center",
   flexCol: "flex flex-col",
   flexColCenter: "flex flex-col items-center",
+  flexColBetween: "flex flex-col justify-between",
   flexColStart: "flex flex-col  items-start ",
   flexMainLayoutOne: "flex flex-row basis-full gap-x-4",
   flexMainChildOne: "min-w-[20%] w-[20%] max-w-[20%]",
