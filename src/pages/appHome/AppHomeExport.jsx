@@ -4,7 +4,9 @@ import { HomeLayout } from "../../component/home/homeExport";
 const AppHomeExport = () => {
   return (
     <>
-      <div>hello component</div>
+      <div>
+        <div className={`bg-deepGray`}>{/* main layout components 1 */}</div>
+      </div>
     </>
   );
 };

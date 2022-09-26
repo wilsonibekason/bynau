@@ -1,2 +1,3 @@
 import BannerImage from "./bannerimage.png";
-export { BannerImage };
+import logo from "./aliexpress_logo.png";
+export { BannerImage, logo };

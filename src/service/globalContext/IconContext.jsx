@@ -3,8 +3,9 @@ import { createContext, useContext } from "react";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BiDownArrow } from "react-icons/bi";
 import { GiUsaFlag } from "react-icons/gi";
-import { BsPhone } from "react-icons/bs";
+import { BsPhone, BsCart3 } from "react-icons/bs";
 import { MdOutlinePerson } from "react-icons/md";
+import { FiSearch } from "react-icons/fi";
 export const IconGlobalContext = createContext({});
 
 export const IconProvider = ({ children }) => {
@@ -16,6 +17,8 @@ export const IconProvider = ({ children }) => {
         BsPhone,
         MdOutlinePerson,
         AiOutlineHeart,
+        BsCart3,
+        FiSearch,
       }}
     >
       {children}
