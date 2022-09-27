@@ -27,6 +27,7 @@ const styles = {
   boxFull: "w-full h-full",
   HorizontalScrollMain:
     "relative flex flex-row basis-full overflow-x-scroll scrollbar-thin overflow-y-hidden snap-proximity snap-x gap-x-2",
+  timerTextBox: `flex justify-center items-center rounded-lg bg-black w-6 h-6`,
 };
 export const flexLayout = {
   flexBetween: "flex justify-between ",

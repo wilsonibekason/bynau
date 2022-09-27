@@ -1,5 +1,6 @@
 import React from "react";
 import { HomeMainView } from "../../component/home/homecomponent/homemainone";
+import { ProductDealslayout } from "../../component/home/homecomponent/homemainthree";
 import { HomeLayout } from "../../component/home/homeExport";
 
 const AppHomeExport = () => {
@@ -8,9 +9,12 @@ const AppHomeExport = () => {
       <div>
         <div className={`bg-bgcolor `}>
           {/* main layout components 1 */}
-          <div className={`ml-40 mr-4`}>
+          <div className={`ml-40 mr-8`}>
             <div className={`w-full min-w-full`}>
               <HomeMainView />
+            </div>
+            <div className={`mr-8`}>
+              <ProductDealslayout />
             </div>
           </div>
         </div>
