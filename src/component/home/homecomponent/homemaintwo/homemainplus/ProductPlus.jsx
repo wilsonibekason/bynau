@@ -1,17 +1,14 @@
 import React from "react";
+import { imageCardTwo, iphonepro } from "../../../../../assets/homeassets";
+import { styles } from "../../../../../styles/bynauCustomStyles";
 import {
-  imagecard,
-  imageCardTwo,
-} from "../../../../../../../assets/homeassets";
-import styles, {
   flexLayout,
   textStyles,
-} from "../../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
-
-const SpecialProductDealCard = () => {
+} from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
+const ProductPlusCard = () => {
   const { flexCol, flexRowCenter, flexCenter } = flexLayout;
   const { mainText, mainTextCustom } = textStyles;
-  const { testContainer, boxFull, transitionLight } = styles;
+  const { transitionLight } = styles;
   return (
     <>
       <div
@@ -23,11 +20,11 @@ const SpecialProductDealCard = () => {
           className={`h-full max-h-full w-full max-w-full ${flexCol} space-y-1`}
         >
           <div
-            className={`h-eight max-h-eight relative bg-bgcolor rounded-t shadow-sm cursor-zoom-in hover:bg-[#fffefe] ${transitionLight}`}
+            className={`h-eight max-h-eight relative bg-bgcolor hover:bg-[#fffefe] ${transitionLight} rounded-t shadow-sm cursor-zoom-in `}
           >
             {/* bg-[#ddd8d8] */}
             <img
-              src={imageCardTwo}
+              src={iphonepro}
               alt=""
               className={`w-full max-w-full h-full object-contain bg-center`}
             />
@@ -60,5 +57,25 @@ const SpecialProductDealCard = () => {
     </>
   );
 };
+const ProductPlus = () => {
+  const { HorizontalScrollCustom } = styles;
+  return (
+    <>
+      <div className={` h-60`}>
+        <div className={`${HorizontalScrollCustom} h-full gap-x-2`}>
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+          <ProductPlusCard />
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default SpecialProductDealCard;
+export default ProductPlus;

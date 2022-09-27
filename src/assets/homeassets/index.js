@@ -3,4 +3,5 @@ import logo from "./aliexpress_logo.png";
 import profile from "./profile.png";
 import imagecard from "./imagecard.png";
 import imageCardTwo from "./imagecard2.png";
-export { BannerImage, logo, profile, imagecard, imageCardTwo };
+import iphonepro from "./iphonepro.png";
+export { BannerImage, logo, profile, imagecard, imageCardTwo, iphonepro };

@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeMainView } from "../../component/home/homecomponent/homemainone";
 import { ProductDealslayout } from "../../component/home/homecomponent/homemainthree";
+import { ProductPlusLayout } from "../../component/home/homecomponent/homemaintwo";
 import { HomeLayout } from "../../component/home/homeExport";
 
 const AppHomeExport = () => {
@@ -15,6 +16,9 @@ const AppHomeExport = () => {
             </div>
             <div className={`mr-8`}>
               <ProductDealslayout />
+              <div className={`my-10`}>
+                <ProductPlusLayout />
+              </div>
             </div>
           </div>
         </div>
