@@ -24,7 +24,7 @@ const HomeMainView = () => {
           <div className={`${flexMainChildTwo}`}>
             <ViewDisplay />
           </div>
-          <div className={`${flexMainChildThree}`}>
+          <div className={`${flexMainChildThree} `}>
             <ViewAccount />
           </div>
         </div>

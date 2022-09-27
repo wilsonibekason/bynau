@@ -16,6 +16,7 @@ import { GiJeweledChalice, GiMirrorMirror, GiTyre } from "react-icons/gi";
 import { SiStmicroelectronics } from "react-icons/si";
 import { VscTools } from "react-icons/vsc";
 import { RiArrowRightSFill } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
 
 export const IconGlobalContext = createContext({});
 
@@ -46,6 +47,7 @@ export const IconProvider = ({ children }) => {
         VscTools,
         //
         RiArrowRightSFill,
+        CgProfile,
       }}
     >
       {children}

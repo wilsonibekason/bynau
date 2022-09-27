@@ -14,7 +14,7 @@ const ViewCarouselAd = () => {
   const { RiArrowRightSFill } = useIcon();
   return (
     <div
-      className={`w-nine rounded-lg bg-orange-300 h-[160px] max-h-[160px] px-2`}
+      className={`w-full rounded-lg bg-orange-300 h-[160px] max-h-[160px] px-2`}
     >
       <div className={`${flexRow} space-x-3`}>
         {/* content display */}
@@ -37,7 +37,7 @@ const ViewCarouselAd = () => {
           <div
             className={`max-w-full w-nine bg-blue-500 h-12 rounded-lg ${flexCenter}`}
           >
-            <div className={`${flexRowCenter} space-x-3 `}>
+            <div className={`${flexRowCenter} space-x-3 cursor-pointer`}>
               <h2 className={`${mainTextCustom} text-xl`}>NGN 1200</h2>
               <div className={`${flexCenter} h-6 w-6 bg-gray-100 rounded-full`}>
                 <RiArrowRightSFill className={`text-orange-500`} size={20} />

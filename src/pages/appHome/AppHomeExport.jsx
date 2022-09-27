@@ -9,7 +9,9 @@ const AppHomeExport = () => {
         <div className={`bg-bgcolor `}>
           {/* main layout components 1 */}
           <div className={`ml-40 mr-4`}>
-            <HomeMainView />
+            <div className={`w-full min-w-full`}>
+              <HomeMainView />
+            </div>
           </div>
         </div>
       </div>

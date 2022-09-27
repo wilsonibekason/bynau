@@ -13,7 +13,8 @@ const ViewDisplay = () => {
   const { mainTextCustom } = textStyles;
   return (
     <>
-      <div>
+      {/* border-4 border-red-500 h-40 bg-black */}
+      <div className={` `}>
         <div className={`${flexCol} space-y-4`}>
           <div className={`${flexRowCenter} space-x-6`}>
             {viewDisplayData.map((item, index) => (

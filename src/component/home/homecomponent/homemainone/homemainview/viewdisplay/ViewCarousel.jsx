@@ -23,7 +23,7 @@ const ViewCarousel = () => {
 
   return (
     <>
-      <div className={`max-w-nine w-full`}>
+      <div className={`max-w-full w-full`}>
         <Swiper
           direction="horizontal"
           speed={1000}

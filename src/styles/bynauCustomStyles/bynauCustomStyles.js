@@ -1,3 +1,15 @@
+export const textStyles = {
+  headingone: "text-3xl text-black font-raleway font-black tracking-tight",
+  headingtwo: "text-3xl text-gray-700 font-roboto font-black tracking-wide",
+  headingthree:
+    "text-2xl text-gray-700 font-opensans font-normal tracking-normal",
+  headingfour: "",
+  headingfive: "",
+  headingsix: "",
+  mainText: "text-xss font-arial text-deepGray tracking-wide",
+  mainTextCustom: " tracking-wider font-arial",
+};
+const { headingfive, headingfour, mainText, mainTextCustom } = textStyles;
 const styles = {
   NavPadX: "mx-36",
   NavPadY: "my-4",
@@ -10,6 +22,11 @@ const styles = {
   transition: "transition-all ease-in-out duration-600 delay-300",
   transitionLight: "transition-all ease-in-out duration-300 delay-100",
   imageCustom: "w-full h-full object-cover ",
+  buttonCustom: `${mainTextCustom} shadow font-semibold text-sm`,
+  testContainer: "border-2 border-solid border-red-500 h-20 rounded",
+  boxFull: "w-full h-full",
+  HorizontalScrollMain:
+    "relative flex flex-row basis-full overflow-x-scroll scrollbar-thin overflow-y-hidden snap-proximity snap-x gap-x-2",
 };
 export const flexLayout = {
   flexBetween: "flex justify-between ",
@@ -26,26 +43,15 @@ export const flexLayout = {
   flexColBetween: "flex flex-col justify-between",
   flexColStart: "flex flex-col  items-start ",
   flexMainLayoutOne: "flex flex-row basis-full gap-x-4",
-  flexMainChildOne: "min-w-[20%] w-[20%] max-w-[20%]",
-  flexMainChildTwo: "min-w-six w-six max-w-six",
-  flexMainChildThree: "max-w-two w-two max-w-two",
+  flexMainChildOne: "min-w-two w-two max-w-two",
+  flexMainChildTwo: "min-w-[55%] w-[55%] max-w-[55%]",
+  flexMainChildThree: "min-w-two w-two max-w-two",
 };
 export const gridLayout = {
   homeMainLayoutOne: " grid grid-cols-1 lg:grid-cols-12 gap-12",
   homeMainChildOne: "col-span-6",
   homeMainChildTwo: "col-span-3",
   homeMainChildThree: "col-span-3",
-};
-export const textStyles = {
-  headingone: "text-3xl text-black font-raleway font-black tracking-tight",
-  headingtwo: "text-3xl text-gray-700 font-roboto font-black tracking-wide",
-  headingthree:
-    "text-2xl text-gray-700 font-opensans font-normal tracking-normal",
-  headingfour: "",
-  headingfive: "",
-  headingsix: "",
-  mainText: "text-xss font-arial text-deepGray tracking-wide",
-  mainTextCustom: " tracking-wider font-arial",
 };
 export const fontStyles = {};
 export const colorStyles = {
