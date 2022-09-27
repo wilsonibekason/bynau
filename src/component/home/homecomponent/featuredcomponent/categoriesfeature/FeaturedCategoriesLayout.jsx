@@ -38,15 +38,15 @@ const FeaturedCategoriesLayout = () => {
         </div>
 
         {/* magic comes to reality */}
-        <div className={`${testContainer} h-64`}>
+        <div className={` h-64`}>
           <div className={`h-full ${flexMainLayoutOne}`}>
-            <div className={`${flexMainChildOneMain} ${testContainer} h-64`}>
+            <div className={`${flexMainChildOneMain}  h-64`}>
               <FeaturedCardOne />
             </div>
-            <div className={`${flexMainChildTwoMain} ${testContainer} h-64`}>
+            <div className={`${flexMainChildTwoMain} h-64`}>
               <FeaturedCardTwo />
             </div>
-            <div className={`${flexMainChildThreeMain} ${testContainer} h-64`}>
+            <div className={`${flexMainChildThreeMain}  h-64`}>
               <FeaturedCardThree />
             </div>
           </div>

@@ -262,22 +262,24 @@ export const viewCarouselAdData = [
 export const featuredCategoriesImages = [
   {
     image: "https://images.meesho.com/images/products/44009963/kxwus_512.jpg",
-    name: "",
+    name: "car",
     link: "",
     id: uuid(),
   },
   {
     image:
       "https://images.unsplash.com/photo-1618886614638-80e3c103d31a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwc3VpdHxlbnwwfHwwfHw%3D&w=1000&q=80",
-    name: "",
+    name: "shoe",
     link: "",
     id: uuid(),
   },
   {
     image:
       "https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-375",
-    name: "",
+    name: "motto",
     link: "",
     id: uuid(),
   },
 ];
+
+export const acceptedFeatureCategories = new Set(["shoe", "car"]);

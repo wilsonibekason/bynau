@@ -30,6 +30,7 @@ const styles = {
   HorizontalScrollCustom:
     "relative flex flex-row basis-full overflow-x-scroll scrollbar-thin overflow-y-hidden snap-proximity snap-x ",
   timerTextBox: `flex justify-center items-center rounded-lg bg-black w-6 h-6`,
+  containerWrapper: " bg-white p-2  rounded-lg shadow-sm hover:shadow-lg",
 };
 export const flexLayout = {
   flexBetween: "flex justify-between ",
