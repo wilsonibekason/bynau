@@ -49,6 +49,9 @@ export const flexLayout = {
   flexMainChildOne: "min-w-two w-two max-w-two",
   flexMainChildTwo: "min-w-[55%] w-[55%] max-w-[55%]",
   flexMainChildThree: "min-w-two w-two max-w-two",
+  flexMainChildOneMain: "min-w-[23.5%] w-[23.5%] max-w-[23.5%]",
+  flexMainChildThreeMain: "min-w-[23.5%] w-[23.5%] max-w-[23.5%]",
+  flexMainChildTwoMain: "min-w-[50%] w-[50%] max-w-[50%]",
 };
 export const gridLayout = {
   homeMainLayoutOne: " grid grid-cols-1 lg:grid-cols-12 gap-12",
