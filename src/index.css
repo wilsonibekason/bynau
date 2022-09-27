@@ -29,6 +29,5 @@ tailwind utility class custom
 }
 
 .delete{
-  background-color: #859fc7;
-  color: #b9c5d6;
+  background: linear-gradient(#7f000000)
 }

@@ -13,10 +13,8 @@ const ProductDealslayout = () => {
   const {} = textStyles;
   return (
     <>
-      <div
-        className={`bg-white ${testContainer} shadow-lg hover:shadow-2xl p-3 `}
-      >
-        <div className={`${flexCol}`}>
+      <div className={`bg-white shadow-lg hover:shadow-2xl p-3 rounded-lg`}>
+        <div className={`${flexCol} space-y-3`}>
           <div>
             <ProductDealTop />
           </div>
