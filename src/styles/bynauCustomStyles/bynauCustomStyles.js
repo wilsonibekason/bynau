@@ -19,18 +19,20 @@ const styles = {
   borderAroundLight: "border border-gray-300 ",
   borderR: "border-r border-solid border-gray-200 w-2 h-4",
   borderR2: "border-r border-solid border-gray-400 w-2 h-8",
+  borderMain: "border-t border-gray-300 w-28 h-1",
   transition: "transition-all ease-in-out duration-600 delay-300",
   transitionLight: "transition-all ease-in-out duration-300 delay-100",
   imageCustom: "w-full h-full object-cover ",
   buttonCustom: `${mainTextCustom} shadow font-semibold text-sm`,
   testContainer: "border-2 border-solid border-red-500 h-20 rounded",
-  boxFull: "w-full h-full",
+  boxFull: "w-full h-full min-w-full max-w-full",
   HorizontalScrollMain:
     "relative flex flex-row basis-full overflow-x-scroll scrollbar-thin overflow-y-hidden snap-proximity snap-x gap-x-2",
   HorizontalScrollCustom:
     "relative flex flex-row basis-full overflow-x-scroll scrollbar-thin overflow-y-hidden snap-proximity snap-x ",
   timerTextBox: `flex justify-center items-center rounded-lg bg-black w-6 h-6`,
-  containerWrapper: " bg-white p-2  rounded-lg shadow-sm hover:shadow-lg",
+  containerWrapper:
+    " bg-white p-2  rounded-lg shadow-sm hover:shadow-lg border-2 ",
 };
 export const flexLayout = {
   flexBetween: "flex justify-between ",
@@ -47,6 +49,7 @@ export const flexLayout = {
   flexColBetween: "flex flex-col justify-between",
   flexColStart: "flex flex-col  items-start ",
   flexMainLayoutOne: "flex flex-row basis-full gap-x-4",
+  flexMainLayoutCustom: "flex flex-row basis-full ",
   flexMainChildOne: "min-w-two w-two max-w-two",
   flexMainChildTwo: "min-w-[55%] w-[55%] max-w-[55%]",
   flexMainChildThree: "min-w-two w-two max-w-two",

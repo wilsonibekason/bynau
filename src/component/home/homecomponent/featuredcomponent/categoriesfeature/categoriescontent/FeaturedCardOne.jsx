@@ -14,8 +14,9 @@ const FeaturedCardOne = () => {
   const { mainTextCustom } = textStyles;
   return (
     <>
+      n
       <main
-        className={`w-full h-full bg-gradient-to-r from-blue-300 via-white to-gray-300 ${flexCol}`}
+        className={`w-full h-full rounded-lg shadow-md bg-gradient-to-r  from-blue-300 via-white to-gray-300 ${flexCol}`}
       >
         <div className={`h-four w-full  ${flexRow}`}>
           <div className={`w-four h-full`}>
@@ -29,7 +30,7 @@ const FeaturedCardOne = () => {
             <img
               src="https://stimg.cardekho.com/images/carexteriorimages/930x620/Lamborghini/Aventador/6721/Lamborghini-Aventador-SVJ/1621849426405/front-left-side-47.jpg?tr=w-375"
               alt=""
-              className={`${imageCustom} backdrop-blur-lg`}
+              className={`${imageCustom} backdrop-opacity-95 max-w-full opacity-5`}
             />
           </div>
         </div>
