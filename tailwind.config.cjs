@@ -26,6 +26,7 @@ module.exports = {
       fontSize: {
         main: ["14px", "10px"],
         xss: ["12px", "10px"],
+        md: ["16px", "22px"],
       },
       width: {
         one: "10%",

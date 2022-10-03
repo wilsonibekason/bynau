@@ -283,3 +283,69 @@ export const featuredCategoriesImages = [
 ];
 
 export const acceptedFeatureCategories = new Set(["shoe", "car"]);
+
+export const FooterContentCardData = [
+  {
+    text: "shopping with us ",
+    id: uuid,
+    services: [
+      {
+        name: "Make payments",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Delivery options",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Buyer Protection",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    text: "Customer Services",
+    id: uuid,
+    services: [
+      {
+        name: "Help Center",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Transaction Services Agreement for non-EU/UK Consumers",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Terms and Conditions for EU/EEA/UK",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+  {
+    text: "Collaborate with us",
+    id: uuid,
+    services: [
+      {
+        name: "Partnerships",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "Affiliate Program",
+        link: "",
+        id: uuid(),
+      },
+      {
+        name: "DS Center",
+        link: "",
+        id: uuid(),
+      },
+    ],
+  },
+];

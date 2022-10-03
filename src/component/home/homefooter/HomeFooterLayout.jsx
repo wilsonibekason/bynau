@@ -5,10 +5,14 @@ import HomeFooterBottomUp from "./homefooterbottom/HomeFooterBottomUp";
 import HomeFooterTopDown from "./homefootertop/HomeFooterTopDown";
 import HomeFooterTopUp from "./homefootertop/HomeFooterTopUp";
 const TopLayerFooter = () => {
+  const { homeMainMX } = styles;
   return (
     <div>
-      <HomeFooterTopUp />
-      <div>
+      <div className={`${homeMainMX}`}>
+        <HomeFooterTopUp />
+      </div>
+      <div className={`border border-gray-200 my-16 h-px`} />
+      <div className={`my-10 ${homeMainMX}`}>
         <HomeFooterTopDown />
       </div>
     </div>
@@ -16,11 +20,12 @@ const TopLayerFooter = () => {
 };
 
 const DownLayerFooter = () => {
+  const { NavPadY } = styles;
   return (
     <>
       <div className={`w-full max-w-full`}>
         <HomeFooterBottomUp />
-        <div>
+        <div className={`${NavPadY}`}>
           <HomeFooterBottomDown />
         </div>
       </div>
@@ -31,7 +36,7 @@ const HomeFooterLayout = () => {
   const { NavPadX, homeMainMX } = styles;
   return (
     <>
-      <div className={`${homeMainMX} `}>
+      <div className={` `}>
         <div className={`w-full max-w-full`}>
           <div className={`w-full `}>
             <TopLayerFooter />
