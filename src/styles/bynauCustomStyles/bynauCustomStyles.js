@@ -13,9 +13,12 @@ const { headingfive, headingfour, mainText, mainTextCustom } = textStyles;
 const styles = {
   NavPadX: "mx-36",
   NavPadY: "my-4",
+  homeMainMX: "ml-40 mr-16",
   marginXlayout: "mx-24",
   bannerBTN:
     "py-1.5 px-3 bg-bgLemonBlueDark rounded-lg text-sm font-arial font-semibold text-gray-100",
+  XBoxFull: "min-w-full w-full max-w-full",
+  YBoxFull: "min-h-full h-full max-h-full",
   borderAroundLight: "border border-gray-300 ",
   borderR: "border-r border-solid border-gray-200 w-2 h-4",
   borderR2: "border-r border-solid border-gray-400 w-2 h-8",

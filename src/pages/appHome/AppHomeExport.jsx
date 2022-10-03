@@ -7,6 +7,7 @@ import { ProductDealslayout } from "../../component/home/homecomponent/homemaint
 import { ProductPlusLayout } from "../../component/home/homecomponent/homemaintwo";
 import { HomeLayout } from "../../component/home/homeExport";
 import { AuthModal } from "../../component/modals";
+import { useIcon } from "../../hooks/stateContext/IconContextProvider";
 import { flexLayout } from "../../styles/bynauCustomStyles/bynauCustomStyles";
 
 const AppHomeExport = () => {
@@ -14,6 +15,7 @@ const AppHomeExport = () => {
     <AuthModal />;
   }, []);
   const { flexCenter } = flexLayout;
+  const { onAuthModal } = useIcon();
   return (
     <>
       <div>
@@ -35,7 +37,7 @@ const AppHomeExport = () => {
             </div>
           </div>
         </div>
-        <AuthModal />;
+        {onAuthModal && <AuthModal />} ;
         <ScrollToTop
           smooth
           viewBox="0 0 24 24"

@@ -18,7 +18,7 @@ const TopLayerFooter = () => {
 const DownLayerFooter = () => {
   return (
     <>
-      <div>
+      <div className={`w-full max-w-full`}>
         <HomeFooterBottomUp />
         <div>
           <HomeFooterBottomDown />
@@ -28,12 +28,12 @@ const DownLayerFooter = () => {
   );
 };
 const HomeFooterLayout = () => {
-  const { NavPadX, NavPadY } = styles;
+  const { NavPadX, homeMainMX } = styles;
   return (
     <>
-      <div className={`${NavPadX} `}>
+      <div className={`${homeMainMX} `}>
         <div className={`w-full max-w-full`}>
-          <div>
+          <div className={`w-full `}>
             <TopLayerFooter />
           </div>
           <div>

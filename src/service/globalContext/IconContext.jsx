@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 /// icons importation
 import {
   AiOutlineHeart,
@@ -38,6 +38,7 @@ import { FcGoogle } from "react-icons/fc";
 export const IconGlobalContext = createContext({});
 
 export const IconProvider = ({ children }) => {
+  const [onAuthModal, setOnAuthModal] = useState(true);
   return (
     <IconGlobalContext.Provider
       value={{
@@ -79,6 +80,8 @@ export const IconProvider = ({ children }) => {
         //
         RiArrowRightSFill,
         CgProfile,
+        setOnAuthModal,
+        onAuthModal,
       }}
     >
       {children}

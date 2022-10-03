@@ -10,7 +10,8 @@ const AuthModal = () => {
   const { containerWrapper } = styles;
   const { flexCol, flexCenter, flexRowCenter, flexBetween } = flexLayout;
   const { mainTextCustom, mainText } = textStyles;
-  const { FcGoogle, BsTwitter, FaFacebookF, AiOutlineClose } = useIcon();
+  const { FcGoogle, BsTwitter, FaFacebookF, AiOutlineClose, setOnAuthModal } =
+    useIcon();
   return (
     <div className={`block z-[1000000]`}>
       <div
@@ -23,7 +24,11 @@ const AuthModal = () => {
             >
               Welcome to AliExpress
             </div>
-            <AiOutlineClose size={25} className={`text-gray-500`} />
+            <AiOutlineClose
+              size={25}
+              className={`text-gray-500`}
+              onClick={() => setOnAuthModal((prev) => !prev)}
+            />
           </div>
 
           <div
