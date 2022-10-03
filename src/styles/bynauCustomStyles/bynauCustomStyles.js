@@ -7,6 +7,7 @@ export const textStyles = {
   headingfive: "",
   headingsix: "",
   mainText: "text-xss font-arial text-deepGray tracking-wide",
+  mainHeader: "text-md font-arial text-gray-800 font-semibold tracking-wider ",
   mainTextCustom: " tracking-wider font-arial",
 };
 const { headingfive, headingfour, mainText, mainTextCustom } = textStyles;

@@ -20,11 +20,15 @@ const TopLayerFooter = () => {
 };
 
 const DownLayerFooter = () => {
-  const { NavPadY } = styles;
+  const { NavPadY, homeMainMX } = styles;
   return (
     <>
-      <div className={`w-full max-w-full`}>
-        <HomeFooterBottomUp />
+      <div className={`w-full max-w-full `}>
+        <div className={`bg-bgcolor `}>
+          <div className={`${homeMainMX}`}>
+            <HomeFooterBottomUp />
+          </div>
+        </div>
         <div className={`${NavPadY}`}>
           <HomeFooterBottomDown />
         </div>
@@ -32,6 +36,7 @@ const DownLayerFooter = () => {
     </>
   );
 };
+
 const HomeFooterLayout = () => {
   const { NavPadX, homeMainMX } = styles;
   return (

@@ -16,7 +16,7 @@ const ContainerContact = () => {
   return (
     <>
       <div className={`${XBoxFull}`}>
-        <div className={`${flexCol} space-y-6`}>
+        <div className={`${flexCol} justify-center  space-y-6`}>
           <p className={`${mainTextCustom} text-lg text-gray-900 font-normal `}>
             Stay Connected
           </p>
