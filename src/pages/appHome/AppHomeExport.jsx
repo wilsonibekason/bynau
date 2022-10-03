@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import { FeaturedCategoriesLayout } from "../../component/home/homecomponent/featuredcomponent";
 import { HomeMainView } from "../../component/home/homecomponent/homemainone";
@@ -6,9 +6,13 @@ import { HomeProductLayout } from "../../component/home/homecomponent/homemainpr
 import { ProductDealslayout } from "../../component/home/homecomponent/homemainthree";
 import { ProductPlusLayout } from "../../component/home/homecomponent/homemaintwo";
 import { HomeLayout } from "../../component/home/homeExport";
+import { AuthModal } from "../../component/modals";
 import { flexLayout } from "../../styles/bynauCustomStyles/bynauCustomStyles";
 
 const AppHomeExport = () => {
+  useLayoutEffect(() => {
+    <AuthModal />;
+  }, []);
   const { flexCenter } = flexLayout;
   return (
     <>
@@ -31,6 +35,7 @@ const AppHomeExport = () => {
             </div>
           </div>
         </div>
+        <AuthModal />;
         <ScrollToTop
           smooth
           viewBox="0 0 24 24"
