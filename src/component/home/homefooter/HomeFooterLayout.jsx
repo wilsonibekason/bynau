@@ -29,8 +29,10 @@ const DownLayerFooter = () => {
             <HomeFooterBottomUp />
           </div>
         </div>
-        <div className={`${NavPadY}`}>
-          <HomeFooterBottomDown />
+        <div className={`bg-deepGray `}>
+          <div className={`${homeMainMX}`}>
+            <HomeFooterBottomDown />
+          </div>
         </div>
       </div>
     </>
