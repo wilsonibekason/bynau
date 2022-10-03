@@ -22,7 +22,7 @@ const styles = {
   borderMain: "border-t border-gray-300 w-28 h-1",
   transition: "transition-all ease-in-out duration-600 delay-300",
   transitionLight: "transition-all ease-in-out duration-300 delay-100",
-  imageCustom: "w-full h-full object-cover ",
+  imageCustom: "w-full h-full object-contain ",
   buttonCustom: `${mainTextCustom} shadow font-semibold text-sm`,
   testContainer: "border-2 border-solid border-red-500 h-20 rounded",
   boxFull: "w-full h-full min-w-full max-w-full",
@@ -73,3 +73,88 @@ export const hoverStyles = {
   redTextGroup: "group-hover:text-darkRed",
 };
 export default styles;
+
+/** 
+ * 
+ * ement.style {
+    display: block;
+    z-index: 1000000;
+}
+
+
+element.style {
+    position: fixed;
+    right: 72px;
+    bottom: 72px;
+    width: 420px;
+    padding: 24px;
+    font-family: "Open Sans", OpenSans, Helvetica, Arial;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 16px 0px;
+    transition: transform 1000ms ease 0ms;
+     
+     position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+}
+}
+}
+lement.style {
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+        width: 324px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+lement.style {
+    width: 372px;
+    margin-bottom: 16px;
+    opacity: 0.9;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+secnd cntainer
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 217px;
+    background-color: rgb(253, 56, 79);
+    border-radius: 18px;
+}    ===>     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 217px;
+    background-color: rgb(253, 56, 79);
+    border-radius: 18px;
+}
+
+ement.style {
+    margin-left: 8px;
+    font-size: 16px;
+    opacity: 0.5;
+    color
+ */

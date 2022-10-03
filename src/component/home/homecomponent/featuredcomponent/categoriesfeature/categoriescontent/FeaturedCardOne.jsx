@@ -14,7 +14,6 @@ const FeaturedCardOne = () => {
   const { mainTextCustom } = textStyles;
   return (
     <>
-      n
       <main
         className={`w-full h-full rounded-lg shadow-md bg-gradient-to-r  from-blue-300 via-white to-gray-300 ${flexCol}`}
       >

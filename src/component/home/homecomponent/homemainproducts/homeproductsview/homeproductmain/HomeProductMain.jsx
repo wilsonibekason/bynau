@@ -12,9 +12,12 @@ const HomeProductMain = () => {
 
   return (
     <>
-      <div
-        className={`${flexMainLayoutCustom} flex-wrap flex-shrink-0 gap-x-2 `}
-      >
+      <div className={`${flexMainLayoutCustom} flex-wrap flex-shrink-0 gap-2 `}>
+        <HomeProductMainCard />
+        <HomeProductMainCard />
+        <HomeProductMainCard />
+        <HomeProductMainCard />
+        <HomeProductMainCard />
         <HomeProductMainCard />
         <HomeProductMainCard />
         <HomeProductMainCard />

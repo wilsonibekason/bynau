@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         deepGray: "#3a3e4a",
         darkRed: "#ff4747",
+        goldDeep: "#D4AF37",
       },
       fontSize: {
         main: ["14px", "10px"],
