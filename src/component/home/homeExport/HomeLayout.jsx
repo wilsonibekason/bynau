@@ -1,6 +1,7 @@
 import React from "react";
 import { flexLayout } from "../../../styles/bynauCustomStyles/bynauCustomStyles";
 import { HomeBanner } from "../homeBanner";
+import { HomeFooterLayout } from "../homefooter";
 import { HomeNavbar } from "../homeNavbar";
 
 const HomeLayout = ({ children }) => {
@@ -18,7 +19,9 @@ const HomeLayout = ({ children }) => {
           <HomeNavbar />
           <div>{children}</div>
           <div>
-            <footer>footer</footer>
+            <footer className={``}>
+              <HomeFooterLayout />
+            </footer>
           </div>
         </div>
       </div>
