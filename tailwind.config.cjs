@@ -38,6 +38,7 @@ module.exports = {
         seven: "70%",
         eight: "80%",
         nine: "90%",
+        maxwidth: "1024px",
       },
       maxWidth: {
         one: "10%",
@@ -49,6 +50,7 @@ module.exports = {
         seven: "70%",
         eight: "80%",
         nine: "90%",
+        maxwidth: "1024px",
       },
       minWidth: {
         one: "10%",
