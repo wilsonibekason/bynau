@@ -41,7 +41,7 @@ const HomeFooterBottomUp = () => {
                     </p>
                     <div className={`${flexRowCenter} space-x-3`}>
                       <div
-                        className={`${flexRowCenter} bg-bgLemonBlueDark space-x-1 p-1 rounded-lg`}
+                        className={`${flexRowCenter} bg-bgLemonBlueDark space-x-1 p-1 rounded-lg cursor-pointer`}
                       >
                         <AiFillAndroid size={25} />
                         <p
@@ -51,7 +51,7 @@ const HomeFooterBottomUp = () => {
                         </p>
                       </div>
                       <div
-                        className={`${flexRowCenter} bg-gray-500 space-x-1 p-1 rounded-lg`}
+                        className={`${flexRowCenter} bg-gray-500 space-x-1 p-1 rounded-lg  cursor-pointer`}
                       >
                         <BsApple size={25} />
                         <p
@@ -62,7 +62,7 @@ const HomeFooterBottomUp = () => {
                       </div>
                       {/*  */}
                       <div
-                        className={`${flexRowCenter} bg-gradient-to-r from-gray-500 via-goldDeep to-blue-200 space-x-1 p-1 rounded-lg`}
+                        className={`${flexRowCenter} bg-gradient-to-r from-gray-500 via-goldDeep to-blue-200 space-x-1 p-1 rounded-lg cursor-pointer`}
                       >
                         <AiFillAndroid size={25} />
                         <p
