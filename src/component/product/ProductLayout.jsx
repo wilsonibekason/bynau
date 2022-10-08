@@ -2,6 +2,7 @@ import React from "react";
 import { HomeBannerBottom } from "../home/homeBanner";
 import ProductMainBanner from "./mainbanner/ProductMainBanner";
 import ProductNavbar from "./mainbanner/productnavbar/ProductNavbar";
+import ProductDetailNavbar from "./productdetailnavbar/ProductDetailNavbar";
 
 const ProductLayout = (props) => {
   return (
@@ -13,6 +14,9 @@ const ProductLayout = (props) => {
           </div>
           <div>
             <ProductNavbar />
+          </div>
+          <div>
+            <ProductDetailNavbar />
           </div>
           {/* children */}
           <div>{props.children}</div>

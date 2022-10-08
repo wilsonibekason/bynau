@@ -51,14 +51,14 @@ const ProductNavbar = () => {
               </div>
               <div className={`${flexColCenter} space-y-2`}>
                 <a
-                  className={`${flexRowCenter} w-16 py-1.5 bg-darkRed ${flexCenter} rounded-2xl`}
+                  className={`${flexRowCenter} w-16 py-1 bg-darkRed ${flexCenter} rounded-2xl `}
                 >
                   <BsPlus className="text-white " />
                   <p
                     className={`${mainTextCustom} text-xss  font-normal text-white`}
                   >
                     {" "}
-                    follow
+                    Follow
                   </p>
                 </a>
                 <div>

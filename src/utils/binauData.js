@@ -14,6 +14,7 @@ import { useIcon } from "../hooks/stateContext/IconContextProvider";
 //   SiStmicroelectronics,
 //   VscTools,
 // } = useIcon();
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 export const mainViewCategory = [
   {
@@ -347,5 +348,38 @@ export const FooterContentCardData = [
         id: uuid(),
       },
     ],
+  },
+];
+
+export const ProductDetailNavData = [
+  {
+    name: "Home",
+    icon: "",
+    link: "",
+    id: uuid(),
+  },
+  {
+    name: "Products",
+    icon: RiArrowDropDownLine,
+    link: "",
+    id: uuid(),
+  },
+  {
+    name: "SalesItems",
+    icon: "",
+    link: "",
+    id: uuid(),
+  },
+  {
+    name: "Top Selling",
+    icon: "",
+    link: "",
+    id: uuid(),
+  },
+  {
+    name: "Feedback",
+    icon: "",
+    link: "",
+    id: uuid(),
   },
 ];
