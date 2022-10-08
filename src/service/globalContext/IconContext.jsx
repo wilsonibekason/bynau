@@ -19,6 +19,7 @@ import {
   BsApple,
   BsTwitter,
   BsInstagram,
+  BsPlus,
 } from "react-icons/bs";
 import {
   MdOutlinePerson,
@@ -67,6 +68,7 @@ export const IconProvider = ({ children }) => {
         BsApple,
         AiOutlineClose,
         FaFacebookSquare,
+        BsPlus,
         ///
         FcGoogle,
         BsTwitter,

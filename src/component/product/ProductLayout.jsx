@@ -1,6 +1,7 @@
 import React from "react";
 import { HomeBannerBottom } from "../home/homeBanner";
 import ProductMainBanner from "./mainbanner/ProductMainBanner";
+import ProductNavbar from "./mainbanner/productnavbar/ProductNavbar";
 
 const ProductLayout = (props) => {
   return (
@@ -9,6 +10,9 @@ const ProductLayout = (props) => {
         <div className={`w-full max-w-full`}>
           <div className={`w-full`}>
             <ProductMainBanner />
+          </div>
+          <div>
+            <ProductNavbar />
           </div>
           {/* children */}
           <div>{props.children}</div>
