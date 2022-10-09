@@ -32,7 +32,11 @@ import { IoMdMan, IoMdWoman, IoMdPhonePortrait } from "react-icons/io";
 import { GiJeweledChalice, GiMirrorMirror, GiTyre } from "react-icons/gi";
 import { SiStmicroelectronics } from "react-icons/si";
 import { VscTools } from "react-icons/vsc";
-import { RiArrowRightSFill, RiWhatsappFill } from "react-icons/ri";
+import {
+  RiArrowRightSFill,
+  RiWhatsappFill,
+  RiArrowDropDownLine,
+} from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import {
   FaCrown,
@@ -41,6 +45,7 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
+import { GrStar } from "react-icons/gr";
 
 export const IconGlobalContext = createContext({});
 
@@ -69,12 +74,14 @@ export const IconProvider = ({ children }) => {
         AiOutlineClose,
         FaFacebookSquare,
         BsPlus,
+        RiArrowDropDownLine,
         ///
         FcGoogle,
         BsTwitter,
         FaFacebookF,
         RiWhatsappFill,
         BsInstagram,
+        GrStar,
         //
         IoMdMan,
         IoMdWoman,

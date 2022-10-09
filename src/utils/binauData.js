@@ -394,17 +394,25 @@ product view
     margin-left: 32px;
     padding-bottom: 30px;
 }
+uniform-banner-box-right {
+    position: absolute;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    max-width: 174px;
+    right: 0;
+    height: 100%;
+    color: #fff;
+    font-size: 12px;
+    min-width: 110px;
+}
  * 
- * .header.header-outer-container, .product-extend, .top-lighthouse {
-    width: 100%;
-    min-width: 990px;
-    .header.header-outer-container, .product-extend, .top-lighthouse {
-    width: 100%;
-    min-width: 990px;
-    productdetailnavbar      max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
+     content: "";
+    position: absolute;
+    width: 10px;
+    height: 22px;
+    top: 0;
 }
  */

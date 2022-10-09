@@ -30,9 +30,14 @@ const MainProductDisplayLayout = () => {
             <MainProductsLeftContents />
           </div>
           <div
-            className={`basis-[550px] flex-grow ${containerWrapper} h-[1in] `}
+            className={`basis-[550px] flex-grow ${containerWrapper} h-[5in] `}
           >
-            <MainProductRightContents />
+            <div className={`${XBoxFull} ${flexRow}`}>
+              <MainProductRightContents />
+              <div className="w-[200px]">
+                <h1>hello</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
