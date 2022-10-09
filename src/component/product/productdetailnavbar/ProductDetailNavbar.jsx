@@ -7,7 +7,7 @@ import {
 import { ProductDetailNavData } from "../../../utils/binauData";
 
 const ProductDetailNavbar = () => {
-  const { marginXlayout, XBoxFull, containerWrapper } = styles;
+  const { marginXlayout, XBoxFull, containerWrapper, transition } = styles;
   const { mainText2 } = textStyles;
   const { flexRowBetween, flexCenter, flexRowCenter, flexRow } = flexLayout;
   const [hover, setHover] = React.useState(null);
@@ -37,9 +37,9 @@ const ProductDetailNavbar = () => {
                             <p className="">{name}</p>
                             <icon />
                             <div
-                              className={`px-7 h-px border border-darkRed absolute bottom-0 invisible ${
-                                hover === id && "visible"
-                              } `}
+                              className={`${
+                                hover === id ? "visible" : "invisible"
+                              } px-7 h-px border-2 border-darkRed absolute bottom-0 ${transition}`}
                             />
                           </a>
                         </>

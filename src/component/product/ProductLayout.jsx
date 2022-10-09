@@ -1,10 +1,12 @@
 import React from "react";
+import { styles } from "../../styles/bynauCustomStyles";
 import { HomeBannerBottom } from "../home/homeBanner";
 import ProductMainBanner from "./mainbanner/ProductMainBanner";
 import ProductNavbar from "./mainbanner/productnavbar/ProductNavbar";
 import ProductDetailNavbar from "./productdetailnavbar/ProductDetailNavbar";
 
 const ProductLayout = (props) => {
+  const { marginXlayout } = styles;
   return (
     <>
       <div className={``}>
@@ -19,7 +21,7 @@ const ProductLayout = (props) => {
             <ProductDetailNavbar />
           </div>
           {/* children */}
-          <div>{props.children}</div>
+          <div className={`${marginXlayout}`}>{props.children}</div>
           {/* product footer */}
           <div>
             <h1>
