@@ -25,6 +25,7 @@ const MainProductRightContents = () => {
     RiSpaceShipLine,
     AiOutlineHeart,
     BsHeart,
+    BsShieldCheck,
   } = useIcon();
   return (
     <>
@@ -318,6 +319,18 @@ const MainProductRightContents = () => {
               <div className={`${mainTextCustom} font-light text-sm `}>129</div>
             </div>
           </span>
+        </div>
+        {/* product protection */}
+        <div className={`h-14 ${flexRow} space-x-2`}>
+          <div>
+            <BsShieldCheck size={15} />
+          </div>
+          <div className={` ${flexCol} space-y-2`}>
+            <span className={`${mainText} text-black`}>
+              75-Day Buyer Protection
+            </span>
+            <span className={`${mainText} `}>Money back guarantee</span>
+          </div>
         </div>
       </div>
     </>
