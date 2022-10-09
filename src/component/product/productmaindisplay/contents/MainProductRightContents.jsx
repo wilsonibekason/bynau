@@ -17,12 +17,20 @@ const MainProductRightContents = () => {
     flexCenter,
   } = flexLayout;
   const { mainText, mainTextCustom } = textStyles;
-  const { GrStar, RiArrowDropDownLine } = useIcon();
+  const {
+    GrStar,
+    RiArrowDropDownLine,
+    BsPlus,
+    HiMinus,
+    RiSpaceShipLine,
+    AiOutlineHeart,
+    BsHeart,
+  } = useIcon();
   return (
     <>
       {/* <div></div> */}
       {/* poduct title */}
-      <div className={`${flexCol} space-y-2`}>
+      <div className={`${flexCol} space-y-4`}>
         <div className={` break-all`}>
           <h1 className="text-sm w-fit">
             Original Translucent Matte For Magsafe Magnetic Wireless Charging
@@ -155,7 +163,7 @@ const MainProductRightContents = () => {
         </div>
         <div className="w-full h-px bg-[#f9f9f9]" />
         {/* product Sku */}
-        <div>
+        <div className={`${flexCol} space-y-4`}>
           {/* sku property  */}
           <div className={`${flexCol} space-y-2`}>
             {/* title */}
@@ -181,6 +189,135 @@ const MainProductRightContents = () => {
                 ))}
             </ul>
           </div>
+          {/* sku property */}
+          <div className={`${flexCol} space-y-2`}>
+            <div></div>
+            <ul className={`${flexRow} flex-wrap list-none gap-3`}>
+              {Array(10)
+                .fill()
+                .map((i) => (
+                  <li
+                    className={` ${transitionLight} rounded cursor-pointer proportional-nums border-2 hover:border-darkRed `}
+                    key={i}
+                  >
+                    <div className={`w-14 h-14 ${flexCenter}`}>
+                      <img
+                        src="https://ae01.alicdn.com/kf/S4748387260744161ba5bfc760def4b03U/Original-Translucent-Matte-For-Magsafe-Magnetic-Wireless-Charging-Case-For-iPhone-14-13-12-11-Pro.jpg_50x50.jpg_.webp"
+                        alt=""
+                        className={`max-w-[50px] max-h-[50px]`}
+                      />
+                    </div>
+                  </li>
+                ))}
+            </ul>
+          </div>
+        </div>
+        {/*   product Quantity */}
+        <div className={`${flexCol}`}>
+          {/* <div></div> */}
+          <div className={`${flexRowCenter} space-x-4`}>
+            <span className={`w-20 float-left `}>
+              <div
+                className={`inline-table border-separate border-spacing-0 w-full ${flexRowCenter}`}
+              >
+                <span
+                  className={`w-px table-cell  align-middle whitespace-nowrap`}
+                >
+                  <button
+                    className={`rounded-full bg-bgcolor w-6 h-6 ${flexCenter}`}
+                  >
+                    <li
+                      className={`inline-block font-medium antialiased normal-case text-gray-400`}
+                    >
+                      <HiMinus size={15} />
+                    </li>
+                  </button>
+                </span>
+                {/*  */}
+                <span
+                  className={`h-10 
+                 `}
+                >
+                  <input
+                    type={"text"}
+                    aria-valuemax={9901}
+                    aria-valuemin={1}
+                    autoComplete={"off"}
+                    value={1}
+                    className={`align-middle p-0 m-0 text-center  outline-none border-none text-black bg-transparent w-full`}
+                  />
+                </span>
+                {/*  */}
+                <span
+                  className={`w-px table-cell align-middle whitespace-nowrap`}
+                >
+                  <button
+                    className={`rounded-full bg-bgcolor w-6 h-6 ${flexCenter}`}
+                  >
+                    <li
+                      className={`inline-block font-medium antialiased normal-case text-gray-600`}
+                    >
+                      <BsPlus size={20} />
+                    </li>
+                  </button>
+                </span>
+              </div>
+            </span>
+            {/*  */}
+            <div className={`${flexCol} space-y-1.5 h-9 mt-3`}>
+              <div className={`${mainText} text-[#999]`}>
+                {" "}
+                Additional 10% off (10 Pieces or more)
+              </div>
+              <div className={`${mainText} text-[#999]`}>
+                9982 Pieces available
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*  */}
+        <div className={`${flexRowCenter} space-x-1`}>
+          <span className={`${mainText} cursor-pointer`}>Ships to</span>
+          <span
+            className={`inline-block bg-inherit font-normal text-center align-[-0.125em] antialiased `}
+          >
+            <RiSpaceShipLine size={12} />
+          </span>
+          <span className={`${mainText} cursor-pointer`}>Nigeria</span>
+        </div>
+        {/* product action */}
+        <div className={`${flexRowCenter} space-x-3`}>
+          <span
+            className={`min-w-[165px] text-white bg-darkRed border border-solid border-transparent rounded h-11 ${mainTextCustom} ${flexCenter} `}
+            style={{
+              backgroundImage: `linear-gradient(213deg,#ff7b48 7%,#f73c22 92%)`,
+            }}
+          >
+            <button className={`text-lg font-medium text-ellipsis`}>
+              Buy Now
+            </button>
+          </span>
+          <span
+            className={`min-w-[165px] text-white bg-darkRed border border-solid border-transparent rounded h-11 ${mainTextCustom} ${flexCenter} `}
+            style={{
+              backgroundImage: `linear-gradient(239deg,#ffac2d 7%,#ff8219)`,
+            }}
+          >
+            <button className={`text-lg font-medium text-ellipsis`}>
+              Add to Cart
+            </button>
+          </span>
+
+          <span
+            className={`h-11 p-4 border border-[#e8e8e8] leading-10 cursor-pointer rounded`}
+          >
+            <div className={`h-full ${flexRowCenter} space-x-2`}>
+              <div className={`font-extralight`}>
+                <BsHeart size={15} />
+              </div>
+              <div className={`${mainTextCustom} font-light text-sm `}>129</div>
+            </div>
+          </span>
         </div>
       </div>
     </>

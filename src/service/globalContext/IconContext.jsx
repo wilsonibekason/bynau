@@ -20,6 +20,7 @@ import {
   BsTwitter,
   BsInstagram,
   BsPlus,
+  BsHeart,
 } from "react-icons/bs";
 import {
   MdOutlinePerson,
@@ -36,6 +37,7 @@ import {
   RiArrowRightSFill,
   RiWhatsappFill,
   RiArrowDropDownLine,
+  RiSpaceShipLine,
 } from "react-icons/ri";
 import { CgProfile } from "react-icons/cg";
 import {
@@ -46,6 +48,8 @@ import {
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { GrStar } from "react-icons/gr";
+import { HiMinus } from "react-icons/hi";
+// import {CiHeart} from "react-icons/"
 
 export const IconGlobalContext = createContext({});
 
@@ -59,6 +63,8 @@ export const IconProvider = ({ children }) => {
         BsPhone,
         MdOutlinePerson,
         AiOutlineHeart,
+        BsHeart,
+        // CiHeart,
         BsCart3,
         FiSearch,
         AiOutlineMenuFold,
@@ -67,6 +73,7 @@ export const IconProvider = ({ children }) => {
         AiOutlineDollarCircle,
         FaCarSide,
         AiOutlineCreditCard,
+        RiSpaceShipLine,
         BsShieldCheck,
         BsPeople,
         AiFillAndroid,
@@ -75,6 +82,7 @@ export const IconProvider = ({ children }) => {
         FaFacebookSquare,
         BsPlus,
         RiArrowDropDownLine,
+        HiMinus,
         ///
         FcGoogle,
         BsTwitter,
