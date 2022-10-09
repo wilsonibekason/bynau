@@ -4,6 +4,8 @@ import {
   flexLayout,
   textStyles,
 } from "../../../styles/bynauCustomStyles/bynauCustomStyles";
+import MainProductRightContents from "./contents/MainProductRightContents";
+import MainProductsLeftContents from "./contents/MainProductsLeftContents";
 
 const MainProductDisplayLayout = () => {
   const { XBoxFull, containerWrapper } = styles;
@@ -11,10 +13,27 @@ const MainProductDisplayLayout = () => {
   const { flexRowCenter, flexRow } = flexLayout;
   return (
     <>
-      <div className={`${XBoxFull}`}>
-        <div className={`${flexRow} basis-full `}>
-          <div className={`w-[7in] ${containerWrapper} h-[15in]`}></div>
-          <div className={`w-[13in] ${containerWrapper} h-[15in]`}></div>
+      <div className={`${XBoxFull} bg-white min-h-[588px]`}>
+        {/* <div className={`${flexRow} basis-full `}>
+          <div className={`w-[500px] ${containerWrapper} h-[15in]`}>
+            <MainProductsLeftContents />
+          </div>
+          <div className={`w-[800px] ${containerWrapper} h-[15in]`}>
+            <MainProductRightContents />
+          </div>
+        </div> */}
+        <div className={`${flexRow}  w-[1200px] flex`}>
+          <div
+            className={`relative w-[450px] flex-shrink-0 ${containerWrapper} h-[1in]`}
+          >
+            {" "}
+            <MainProductsLeftContents />
+          </div>
+          <div
+            className={`basis-[550px] flex-grow ${containerWrapper} h-[1in] `}
+          >
+            <MainProductRightContents />
+          </div>
         </div>
       </div>
     </>

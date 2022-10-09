@@ -383,3 +383,28 @@ export const ProductDetailNavData = [
     id: uuid(),
   },
 ];
+/**
+ * 
+
+product view
+-ms-flex-preferred-size: 550px;
+    flex-basis: 550px;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 32px;
+    padding-bottom: 30px;
+}
+ * 
+ * .header.header-outer-container, .product-extend, .top-lighthouse {
+    width: 100%;
+    min-width: 990px;
+    .header.header-outer-container, .product-extend, .top-lighthouse {
+    width: 100%;
+    min-width: 990px;
+    productdetailnavbar      max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ */
