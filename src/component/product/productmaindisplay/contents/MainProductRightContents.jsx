@@ -33,7 +33,7 @@ const MainProductRightContents = () => {
       {/* poduct title */}
       <div className={`${flexCol} space-y-4`}>
         <div className={` break-all`}>
-          <h1 className="text-sm w-fit">
+          <h1 className="text-sm w-fit max-w-nine">
             Original Translucent Matte For Magsafe Magnetic Wireless Charging
             Case For iPhone 14 13 12 11 Pro Plus Max Solid Hard PC Cover
           </h1>
@@ -67,7 +67,7 @@ const MainProductRightContents = () => {
                     .map((i) => (
                       <span className="ml-[-2px]" key={i}>
                         <li
-                          className={`transition inline-block antialiased font-normal cursor-pointer`}
+                          className={`transition inline-block antialiased font-normal cursor-pointer text-darkRed`}
                         >
                           <GrStar size={15} />
                         </li>
@@ -215,7 +215,6 @@ const MainProductRightContents = () => {
         </div>
         {/*   product Quantity */}
         <div className={`${flexCol}`}>
-          {/* <div></div> */}
           <div className={`${flexRowCenter} space-x-4`}>
             <span className={`w-20 float-left `}>
               <div

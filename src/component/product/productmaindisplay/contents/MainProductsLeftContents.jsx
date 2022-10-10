@@ -15,7 +15,7 @@ const ImagesWrap = () => {
           <img
             src="https://ae01.alicdn.com/kf/Saeb7402c2b87476fa267161f0c4300cbJ/Original-Translucent-Matte-For-Magsafe-Magnetic-Wireless-Charging-Case-For-iPhone-14-13-12-11-Pro.jpg_50x50.jpg_.webp"
             alt=""
-            className={`max-w-[54px] max-h-[54px]`}
+            className={`max-w-[50px] max-h-[50px]`}
           />
         </div>
       </li>
@@ -30,7 +30,9 @@ const MainProductsLeftContents = () => {
     <>
       <div className={`w-[450px] overflow-hidden bg-white`}>
         {/* video or image container */}
-        <div className={` w-[450px] h-[450px] relative none ${flexCenter} `}>
+        <div
+          className={` w-[450px] h-[450px] relative overscroll-none ${flexCenter} `}
+        >
           <img
             src="https://ae01.alicdn.com/kf/Saeb7402c2b87476fa267161f0c4300cbJ/Original-Translucent-Matte-For-Magsafe-Magnetic-Wireless-Charging-Case-For-iPhone-14-13-12-11-Pro.jpg_Q90.jpg_.webp"
             alt=""
