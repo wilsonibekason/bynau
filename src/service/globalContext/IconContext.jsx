@@ -24,6 +24,7 @@ import {
 } from "react-icons/bs";
 import {
   MdOutlinePerson,
+  MdOutlineArrowRight,
   MdComputer,
   MdOutlineToys,
   MdOutlineSportsVolleyball,
@@ -64,6 +65,7 @@ export const IconProvider = ({ children }) => {
         MdOutlinePerson,
         AiOutlineHeart,
         BsHeart,
+        MdOutlineArrowRight,
         // CiHeart,
         BsCart3,
         FiSearch,

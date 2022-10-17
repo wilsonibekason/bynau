@@ -7,8 +7,7 @@ export const textStyles = {
   headingfive: "",
   headingsix: "",
   mainText: "text-xss font-arial text-deepGray tracking-wide",
-  mainText2:
-    "text-sm font-arial fotnt-medium tracking-normal text-italic text-ellipsis",
+  mainText2: "text-sm font-arial tracking-normal text-italic text-ellipsis",
   mainHeader: "text-md font-arial text-gray-800 font-semibold tracking-wider ",
   mainTextCustom: " tracking-wider font-arial",
 };

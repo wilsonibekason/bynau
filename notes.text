@@ -23,3 +23,49 @@ line-height: 20px;
 text-align: center;
 padding: 0 2px;
 }
+
+<div className={classNames("mt-1 mb-4")}>
+<div className={`h-[18px] mb-[6px]`}>
+  <a
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+    className="text-lemonBlueDark"
+    href="//message.aliexpress.com/message/new.htm?productId=1005004218144340&amp;messageType=product&amp;memberType=seller&amp;refer=//www.aliexpress.com/item/1005004218144340.html"
+    clk_trigger=""
+    ae_page_type="detail_page"
+    ae_page_area="store_left"
+    ae_button_type="contact_now"
+    ae_object_type="product"
+    ae_object_value="1005004218144340"
+    st_page_id="cfgghnxbocawlxis183e626957011c24236917e8ab"
+    data-aplus-clk="x21_799b97ab"
+    data-spm-anchor-id="a2g0o.detail.100005.1"
+  >
+    <svg
+      className="text-[16px] align-bottom h-[18px] mr-1 overflow-hidden text-current w-[1em] "
+      style={{
+        fontSize: `16px`,
+      }}
+    >
+      {/* <use></use> */}
+    </svg>
+    <span className="leading-4 inline-block">
+      Contact
+    </span>
+  </a>
+</div>
+</div>
+{/* store info BTN */}
+<div
+className={classNames(
+  `inline-block mr-1 mb-2 rounded-3xl`,
+  `min-w-[86px] w-fit h-6 pt-1 pr-3 border border-solid border-[#ff4747] rounded-lg text-darkRed bg-white cursor-pointer leading-4`,
+  `${flexCenter}`
+)}
+>
+<a
+  href=""
+  className="-ml-2 -mr-2  inline-block font-light antialiased transform-none"
+></a>
+<span>Follow</span>
+</div>

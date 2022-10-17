@@ -383,36 +383,11 @@ export const ProductDetailNavData = [
     id: uuid(),
   },
 ];
-/**
- * 
 
-product view
--ms-flex-preferred-size: 550px;
-    flex-basis: 550px;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    margin-left: 32px;
-    padding-bottom: 30px;
-}
-uniform-banner-box-right {
-    position: absolute;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: auto;
-    max-width: 174px;
-    right: 0;
-    height: 100%;
-    color: #fff;
-    font-size: 12px;
-    min-width: 110px;
-}
- * 
-     content: "";
-    position: absolute;
-    width: 10px;
-    height: 22px;
-    top: 0;
-}
- */
+export const ShopCategoiesData = [
+  {
+    name: "",
+    link: "",
+    id: uuid(),
+  },
+];
