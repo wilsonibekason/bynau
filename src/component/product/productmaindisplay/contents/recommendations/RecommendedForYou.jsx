@@ -34,7 +34,7 @@ const RecommendedForYou = () => {
                 </div>
                 <div className={`h-10 w-full  ${flexCenter}`}>
                   <span className={`${mainText2} tracking-wider font-bold`}>
-                    NGN 3,000
+                    NGN 3,000 
                   </span>
                 </div>
               </span>
