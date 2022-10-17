@@ -39,6 +39,8 @@ module.exports = {
         eight: "80%",
         nine: "90%",
         maxwidth: "1024px",
+        tablet: "990px",
+        laptop: "1200px",
       },
       maxWidth: {
         one: "10%",

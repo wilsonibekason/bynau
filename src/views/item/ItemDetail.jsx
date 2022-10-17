@@ -1,6 +1,7 @@
 import React from "react";
 import { ProductLayout } from "../../component/product";
 import MainProductDisplayLayout from "../../component/product/productmaindisplay/MainProductDisplayLayout";
+import { OrganisationLayout } from "../../component/product/productmaindisplay/organisation";
 
 const ItemDetail = () => {
   return (
@@ -8,6 +9,10 @@ const ItemDetail = () => {
       <ProductLayout>
         <div>
           <MainProductDisplayLayout />
+        </div>
+        {/* companies container */}
+        <div>
+          <OrganisationLayout />
         </div>
         <div className={`flex-shrink-0`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea
