@@ -10,10 +10,16 @@ import { useIcon } from "../../../../hooks/stateContext/IconContextProvider";
 const OrganisationLayout = () => {
   const { containerWrapper, XBoxFull, boxFull, YBoxFull, transitionLight } =
     styles;
-  const { flexCol, flexColCenter, flexBetween, flexRow, flexCenter } =
-    flexLayout;
+  const {
+    flexCol,
+    flexColCenter,
+    flexBetween,
+    flexRow,
+    flexCenter,
+    flexStart,
+  } = flexLayout;
   const { mainTextCustom, mainText, mainText2 } = textStyles;
-  const { MdOutlineArrowRight } = useIcon();
+  const { MdOutlineArrowRight, BiPlus, AiOutlineMessage } = useIcon();
   return (
     <>
       <div className={`${XBoxFull} bg-white`}>
@@ -146,13 +152,35 @@ const OrganisationLayout = () => {
                           {/*  */}
                           <div
                             className={classNames(
-                              `break-words whitespace-nowrap mb-1 text-[13px]`
+                              `break-words whitespace-nowrap  text-[13px]`
                             )}
                           >
                             1836&nbsp;
                             <span className="text-[#999] leading-[13px] inline-block text-left">
                               Followers
                             </span>
+                          </div>
+                        </div>
+                        {/* store contact info */}
+                        <div
+                          className={classNames(
+                            `inline-block ${flexRow} items-center space-x-1`
+                          )}
+                        >
+                          <a href="">
+                            <span className={classNames(`text-lemonBlueDark`)}>
+                              <AiOutlineMessage />
+                            </span>
+                          </a>
+                          {/*  */}
+                          <div
+                            className={`h-4 whitespace-nowrap ${flexCenter}`}
+                          >
+                            <p
+                              className={`${mainText} antialiased break-words text-lemonBlueDark`}
+                            >
+                              Contact
+                            </p>
                           </div>
                         </div>
                         {/* store info data */}
@@ -163,18 +191,82 @@ const OrganisationLayout = () => {
                         >
                           <div
                             className={classNames(
-                              `border border-solid border-darkRed cursor-pointer bg-white w-20`,
-                              `${flexCenter}`
+                              `border border-solid border-darkRed cursor-pointer bg-white min-w-[86px] w-fit h-6 `,
+                              `${flexCenter} rounded-3xl cursor-pointer `,
+                              ` ${flexRow} space-x-1`
                             )}
                           >
-                            <a href="">l</a>
-                            <span>Follow</span>
+                            <a
+                              href=""
+                              className={classNames(
+                                `inline-block font-light subpixel-antialiased decoration-slice transform-none`
+                              )}
+                            >
+                              <BiPlus size={10} className={`text-darkRed`} />
+                            </a>
+                            <span
+                              className={classNames(`${mainText} text-darkRed`)}
+                            >
+                              Follow
+                            </span>
+                          </div>
+                          <div
+                            className={classNames(
+                              `border border-solid bg-darkRed cursor-pointer text-white min-w-[86px] w-fit h-6 `,
+                              `${flexCenter} rounded-3xl cursor-pointer `
+                            )}
+                          >
+                            <span
+                              className={classNames(`${mainText} text-white`)}
+                            >
+                              Visit Store
+                            </span>
                           </div>
                         </div>
                       </div>
                     </div>
+                    <div
+                      className={classNames(
+                        `${flexStart} items-center pt-4  flex-row gap-x-4`
+                      )}
+                    >
+                      {/* card ELement */}
+                      {Array(6)
+                        .fill()
+                        .map((i) => (
+                          <div
+                            className={`w-[108px] text-center  relative`}
+                            key={i}
+                          >
+                            <div
+                              className={classNames(
+                                `w-[108px] h-[108px] rounded overflow-hidden relative `
+                              )}
+                            >
+                              <a
+                                href="//www.aliexpress.com/item/1005004218144340.html?gps-id=pcDetailBottomMoreThisSeller&amp;scm=1007.13339.291025.0&amp;scm_id=1007.13339.291025.0&amp;scm-url=1007.13339.291025.0&amp;pvid=aad9c9e1-dbb8-42d3-a870-3a4f5d901fec&amp;_t=gps-id:pcDetailBottomMoreThisSeller,scm-url:1007.13339.291025.0,pvid:aad9c9e1-dbb8-42d3-a870-3a4f5d901fec,tpp_buckets:668%232846%238112%231997&amp;pdp_ext_f=%7B%22sku_id%22%3A%2212000028415997694%22%2C%22sceneId%22%3A%223339%22%7D&amp;pdp_npi=2%40dis%21NGN%212702.57%212135.9%21%21%21%21%21%40210312cf16661089689853357e9ee8%2112000028415997694%21rec"
+                                className="text-lemonBlueDark"
+                              >
+                                <img
+                                  className={classNames(
+                                    `translate-x-[-50%] -translate-y-[50%] max-w-full max-h-full top-1/2 left-1/2 absolute`
+                                  )}
+                                  src="//ae01.alicdn.com/kf/S84ecba6589484be6803be302c1244e11t/Original-For-Magsafe-Magnetic-Wireless-Charging-Case-For-iPhone-13-12-11-Pro-Max-Metal-Lens.jpg_480x480q90.jpg_.webp"
+                                  alt="Original For Magsafe Magnetic Wireless Charging Case For iPhone 13 12 11 Pro Max Metal Lens Ring Shockproof Clear Acrylic Cover"
+                                />
+                              </a>
+                            </div>
+                            <div
+                              className={`w-full ${mainText} font-bold text-ellipsis whitespace-nowrap antialiased overflow-hidden mt-2 mb-4`}
+                            >
+                              NGN 2,000
+                            </div>
+                          </div>
+                        ))}
+                    </div>
                   </div>
                 </div>
+
                 {/* <div
                   className={classNames(
                     `w-[75%] max-w-[784px] md:w-[75%] md:max-w-[784px] lg:w-[85%] lg:max-w-[984px] h-full  `,

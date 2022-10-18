@@ -41,6 +41,7 @@ const styles = {
     " bg-white p-2  rounded-lg shadow-sm hover:shadow-lg border-2 ",
 };
 export const flexLayout = {
+  flexStart: "flex justify-start ",
   flexBetween: "flex justify-between ",
   flexRowBetween: "flex flex-row justify-between",
   flexRowCenterBetween: `flex flex-row justify-between items-center `,

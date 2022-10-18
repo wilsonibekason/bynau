@@ -8,8 +8,9 @@ import {
   AiOutlineCreditCard,
   AiFillAndroid,
   AiOutlineClose,
+  AiOutlineMessage,
 } from "react-icons/ai";
-import { BiDownArrow, BiHome } from "react-icons/bi";
+import { BiDownArrow, BiHome, BiPlus } from "react-icons/bi";
 import { GiUsaFlag } from "react-icons/gi";
 import {
   BsPhone,
@@ -66,6 +67,8 @@ export const IconProvider = ({ children }) => {
         AiOutlineHeart,
         BsHeart,
         MdOutlineArrowRight,
+        BiPlus,
+        AiOutlineMessage,
         // CiHeart,
         BsCart3,
         FiSearch,
