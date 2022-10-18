@@ -22,7 +22,7 @@ const OrganisationLayout = () => {
   const { MdOutlineArrowRight, BiPlus, AiOutlineMessage } = useIcon();
   return (
     <>
-      <div className={`${XBoxFull} bg-white`}>
+      <div className={`${XBoxFull}`}>
         <div
           className={classNames(
             "h-[250px] ",
@@ -32,7 +32,9 @@ const OrganisationLayout = () => {
         >
           <div className={classNames(`${flexCol} ${boxFull} space-y-3`)}>
             {/* header top */}
-            <div className={`h-[50px] ${containerWrapper}`}>
+            <div
+              className={`h-[70px] border-0 bg-white p-0 shadow-sm rounded-xl`}
+            >
               <div className={classNames(`${YBoxFull} ${flexCenter}`)}>
                 <h1
                   className={`${mainTextCustom} text-2xl text-ellipsis font-semibold overflow-hidden`}
@@ -42,7 +44,7 @@ const OrganisationLayout = () => {
               </div>
             </div>
             {/* header content */}
-            <div className={classNames(`h-[200px] ${containerWrapper}`)}>
+            <div className={classNames(`h-[200px] `)}>
               <div
                 className={classNames(
                   `${YBoxFull} w-full ${flexRow} space-x-4`
@@ -235,7 +237,7 @@ const OrganisationLayout = () => {
                         .fill()
                         .map((i) => (
                           <div
-                            className={`w-[108px] text-center  relative`}
+                            className={`w-[108px] text-center  relative flex-shrink-0 whitespace-nowrap`}
                             key={i}
                           >
                             <div

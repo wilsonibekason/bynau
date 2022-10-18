@@ -21,7 +21,7 @@ const ProductLayout = (props) => {
             <ProductDetailNavbar />
           </div>
           {/* children */}
-          <div className={`${marginXlayout}`}>{props.children}</div>
+          <div className={``}>{props.children}</div>
           {/* product footer */}
           <div>
             <h1>

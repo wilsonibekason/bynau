@@ -17,6 +17,7 @@ const styles = {
   NavPadY: "my-4",
   homeMainMX: "ml-40 mr-16",
   marginXlayout: "mx-24",
+  marginYlayout: "py-10",
   bannerBTN:
     "py-1.5 px-3 bg-bgLemonBlueDark rounded-lg text-sm font-arial font-semibold text-gray-100",
   XBoxFull: "min-w-full w-full max-w-full",

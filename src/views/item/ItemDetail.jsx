@@ -2,17 +2,21 @@ import React from "react";
 import { ProductLayout } from "../../component/product";
 import MainProductDisplayLayout from "../../component/product/productmaindisplay/MainProductDisplayLayout";
 import { OrganisationLayout } from "../../component/product/productmaindisplay/organisation";
+import { styles } from "../../styles/bynauCustomStyles";
 
 const ItemDetail = () => {
+  const { marginXlayout, marginYlayout } = styles;
   return (
     <div>
       <ProductLayout>
-        <div>
+        <div className={`${marginXlayout}`}>
           <MainProductDisplayLayout />
         </div>
         {/* companies container */}
-        <div>
-          <OrganisationLayout />
+        <div className={`bg-bgcolor`}>
+          <div className={`${marginXlayout} ${marginYlayout}`}>
+            <OrganisationLayout />
+          </div>
         </div>
         <div className={`flex-shrink-0`}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In ea
