@@ -1,5 +1,6 @@
 import React from "react";
 import { ProductLayout } from "../../component/product";
+import { CompanyMoreLayout } from "../../component/product/productmaindisplay/companyMore";
 import MainProductDisplayLayout from "../../component/product/productmaindisplay/MainProductDisplayLayout";
 import { OrganisationLayout } from "../../component/product/productmaindisplay/organisation";
 import { styles } from "../../styles/bynauCustomStyles";
@@ -16,6 +17,9 @@ const ItemDetail = () => {
         <div className={`bg-bgcolor`}>
           <div className={`${marginXlayout} ${marginYlayout}`}>
             <OrganisationLayout />
+            <div>
+              <CompanyMoreLayout />
+            </div>
           </div>
         </div>
         <div className={`flex-shrink-0`}>
