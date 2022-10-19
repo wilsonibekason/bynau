@@ -40,6 +40,7 @@ const styles = {
   timerTextBox: `flex justify-center items-center rounded-lg bg-black w-6 h-6`,
   containerWrapper:
     " bg-white p-2  rounded-lg shadow-sm hover:shadow-lg border-2 ",
+  link: "bg-transparent cursor-pointer touch-manipulation",
 };
 export const flexLayout = {
   flexStart: "flex justify-start ",

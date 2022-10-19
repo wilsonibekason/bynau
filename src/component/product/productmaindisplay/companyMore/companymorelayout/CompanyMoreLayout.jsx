@@ -5,6 +5,8 @@ import {
   flexLayout,
   textStyles,
 } from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
+import CompanyMoreLayoutLeft from "./companymorelayoutleft/LayoutLeft";
+import CompanyMoreLayoutRight from "./companymorelayoutright/LayoutRight";
 
 const CompanyMoreLayout = () => {
   const { XBoxFull, containerWrapper } = styles;
@@ -14,18 +16,17 @@ const CompanyMoreLayout = () => {
     <>
       <div className={classNames(`w-laptop`)}>
         <div className={classNames(`${XBoxFull} ${flexRow} gap-x-2`)}>
-          <div
-            className={classNames(
-              `w-full max-w-[200px] h-40 `,
-              `${containerWrapper}`
-            )}
-          ></div>
+          <div className={classNames(`w-full max-w-[200px]  `)}>
+            <CompanyMoreLayoutLeft />
+          </div>
           <div
             className={classNames(
               `max-w-[784px] md:max-w-[784px] lg:max-w-[1084px] w-full`,
               `${containerWrapper}`
             )}
-          ></div>
+          >
+            <CompanyMoreLayoutRight />
+          </div>
         </div>
       </div>
     </>
