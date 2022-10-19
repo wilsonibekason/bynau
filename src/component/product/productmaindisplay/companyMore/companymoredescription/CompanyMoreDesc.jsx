@@ -4,6 +4,7 @@ import {
   flexLayout,
   textStyles,
 } from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
+import { CompanyMoreDescData } from "../../../../../utils/binauData";
 
 const CompanyMoreDescription = () => {
   const { flexCol } = flexLayout;
@@ -24,13 +25,18 @@ const CompanyMoreDescription = () => {
                     </strong>
                   </span>
                 </p>
-                <img
-                  style={{
-                    width: `1000px`,
-                  }}
-                  width="1000px"
-                  src="https://ae01.alicdn.com/kf/S5d5a0818e7fd40b796e685e7bc979a6f0.jpg"
-                />
+                {[...CompanyMoreDescData]
+                  .sort((a, b) => a.image.localeCompare(b.image))
+                  .map((image) => (
+                    <img
+                      style={{
+                        width: `1000px`,
+                      }}
+                      width="1000px"
+                      src={image.image}
+                      key={image.id}
+                    />
+                  ))}
               </div>
             </div>
           </div>

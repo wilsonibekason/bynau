@@ -415,3 +415,38 @@ export const CompanyMoreRightLayoutTabs = [
     pageValue: 3,
   },
 ];
+
+export const CompanyMoreDescData = [
+  {
+    image: "https://ae01.alicdn.com/kf/S0443770335f84ccbbc3739f26b1e1c5cy.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/S46197cc57bee4e21b8c005978e601e4ft.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/Safe68227f0ce496093a3898f7aed2cdbf.jpg",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/S371daee64b554327b1efe604cd430be6S.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/Sd291471a7dec4de4a0a547f5dfef1a76V.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/S6b586912f0924e7b91a8bc0115824ea0R.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/Sebdbf52fdcce4fb0bbcf8fd2c11708f5w.png",
+    id: uuid(),
+  },
+  {
+    image: "https://ae01.alicdn.com/kf/S5d5a0818e7fd40b796e685e7bc979a6f0.jpg",
+    id: uuid(),
+  },
+];
