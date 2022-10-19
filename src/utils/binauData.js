@@ -398,17 +398,20 @@ export const CompanyMoreRightLayoutTabs = [
     state: true,
     more: "",
     id: uuid(),
+    pageValue: 1,
   },
   {
     name: "Customer reviews",
     state: true,
     more: "232",
     id: uuid(),
+    pageValue: 2,
   },
   {
     name: "specification",
     state: true,
     more: "",
     id: uuid(),
+    pageValue: 3,
   },
 ];

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useMemo, useState } from "react";
 /// icons importation
 import {
   AiOutlineHeart,
@@ -58,6 +58,7 @@ export const IconGlobalContext = createContext({});
 
 export const IconProvider = ({ children }) => {
   const [onAuthModal, setOnAuthModal] = useState(true);
+  const [page, setPage] = useState(1);
   return (
     <IconGlobalContext.Provider
       value={{
@@ -115,6 +116,8 @@ export const IconProvider = ({ children }) => {
         CgProfile,
         setOnAuthModal,
         onAuthModal,
+        page,
+        setPage,
       }}
     >
       {children}

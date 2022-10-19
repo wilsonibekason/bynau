@@ -11,20 +11,12 @@ export const GlobalStateSlice = createSlice({
   name: "globalState",
   initialState,
   reducers: {
-    DisplayPage: (state, action) => {
-      if (state.page === 1) {
-        return <CompanyMoreDescription />;
-      } else if (state.page === 2) {
-        return <CompanyMoreReviews />;
-      } else {
-        return <CompanySpecifications />;
-      }
-    },
+    DisplayPage: (state, action) => {},
   },
 });
 
 const { actions, reducer } = GlobalStateSlice;
 /// states
 export const pageState = (state) => state.globalState.page;
-export const {} = actions;
+export const { DisplayPage } = actions;
 export default reducer;
