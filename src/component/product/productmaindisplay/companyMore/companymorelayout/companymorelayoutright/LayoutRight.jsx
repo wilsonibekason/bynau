@@ -27,7 +27,8 @@ const LayoutChildTabs = ({ name, more, setPage, pageValue, page }) => {
             className={classNames(
               `relative  uppercase  py-3.5 `,
               `${
-                page === pageValue && "border-b-4 border-solid border-gray-700"
+                page === pageValue &&
+                "border-b-4 border-solid border-gray-700 font-bold"
               }`
             )}
           >
