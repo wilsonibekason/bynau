@@ -81,6 +81,7 @@ const Feedback = () => {
                 <div
                   className={`h-8 w-full  whitespace-nowrap border border-solid rounded border-darkWhite p-2`}
                 >
+                  {/* radix dropdown */}
                   <div className={classNames(`${flexRowCenterBetween} h-full`)}>
                     <p className={`${mainText} whitespace-nowrap`}>Sort by</p>
                     <RiArrowDropDownLine />

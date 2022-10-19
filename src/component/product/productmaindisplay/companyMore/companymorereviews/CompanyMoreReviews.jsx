@@ -8,6 +8,8 @@ import {
 } from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
 import Feedback from "./reviewscontents/Feedback";
 import ReviewsChart from "./reviewscontents/ReviewsChart";
+import ReviewsComments from "./reviewscontents/ReviewsComments";
+import ReviewsPagination from "./reviewscontents/ReviewsPagination";
 
 const CompanyMoreReviews = () => {
   const { XBoxFull } = styles;
@@ -31,6 +33,12 @@ const CompanyMoreReviews = () => {
         </div>
         <div className={`${XBoxFull} bg-white`}>
           <Feedback />
+        </div>
+        <div className={classNames(`${XBoxFull}`)}>
+          <ReviewsComments />
+        </div>
+        <div>
+          <ReviewsPagination />
         </div>
       </div>
       <div>CompanyMoreReviews</div>
