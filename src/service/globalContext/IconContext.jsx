@@ -52,6 +52,7 @@ import {
 import { FcGoogle } from "react-icons/fc";
 import { GrStar } from "react-icons/gr";
 import { HiMinus } from "react-icons/hi";
+import { ImStarFull } from "react-icons/im";
 // import {CiHeart} from "react-icons/"
 
 export const IconGlobalContext = createContext({});
@@ -72,6 +73,7 @@ export const IconProvider = ({ children }) => {
         BiPlus,
         AiOutlineMessage,
         AiOutlineStar,
+        ImStarFull,
         // CiHeart,
         BsCart3,
         FiSearch,
