@@ -61,17 +61,18 @@ const CompanyMoreLayoutRight = () => {
               )}
             >
               {/* ACTIVE HAVE A FONT WEIGHT OF 700 */}
-              {CompanyMoreRightLayoutTabs.map((item, id) => (
+              {/* {CompanyMoreRightLayoutTabs.map((item, id) => (
                 <LayoutChildTabs
                   {...item}
                   key={item.id + id}
                   setPage={setPage}
+                  page={page}
                 />
-              ))}
+              ))} */}
             </ul>
           </div>
           {/* layout Body */}
-          <div></div>
+          <div>{DisplayPages}</div>
         </div>
       </div>
     </>
