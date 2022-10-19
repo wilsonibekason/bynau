@@ -44,67 +44,70 @@ const OrganisationLayout = () => {
               </div>
             </div>
             {/* header content */}
-            <div className={classNames(`h-[200px] `)}>
+            <div className={classNames(` w-laptop`)}>
               <div
                 className={classNames(
-                  `${YBoxFull} w-full ${flexRow} space-x-4`
+                  `${YBoxFull} ${flexRow} gap-2 ${XBoxFull}`
                 )}
               >
                 <div
                   className={classNames(
-                    `w-[20%] max-w-[200px] md:w-[20%] md:max-w-[200px] lg:w-[15%] h-full overflow-hidden antialiased`,
-                    `${containerWrapper} p-3`
+                    `w-[20%] max-w-[200px] md:w-[20%] md:max-w-[200px] lg:w-[200px]  overflow-hidden antialiased`,
+                    `px-2 py-3 bg-white border shadow h-[180px] rounded-lg `
                   )}
                 >
                   <div
-                    className={classNames(`${XBoxFull} ${flexCol} space-y-4`)}
+                    className={classNames(
+                      `${XBoxFull} ${flexCol} space-y-4 justify-center`
+                    )}
                   >
                     <div
                       className={`${mainText2} h-3 font-semibold tracking-wider text-gray-800 whitespace-nowrap`}
                     >
                       Store Categories
                     </div>
-                    <ul
-                      className={classNames(
-                        `${flexCol} space-y-2 items-start line-clamp-5`
-                      )}
-                    >
-                      {Array(5)
-                        .fill()
-                        .map((i) => (
-                          <li
-                            className={classNames(
-                              `${flexRow} items-center group whitespace-nowrap cursor-pointer`
-                            )}
-                            key={i}
-                          >
-                            <MdOutlineArrowRight
-                              className={`text-gray-700 group-hover:text-darkRed`}
-                            />
-                            <a
-                              href=""
+                    <div className={``}>
+                      <ul
+                        className={classNames(
+                          `${flexCol} ${YBoxFull} space-y-2 items-start line-clamp-5 ${flexCenter} `
+                        )}
+                      >
+                        {Array(5)
+                          .fill()
+                          .map((i) => (
+                            <li
                               className={classNames(
-                                `${mainText} capitalize text-gray-800 font-semibold`,
-                                transitionLight,
-                                `group-hover:text-darkRed antialiased break-words whitespace-nowrap `
+                                `${flexRow} items-center group whitespace-nowrap cursor-pointer`
                               )}
+                              key={i}
                             >
-                              For Iphone Case
-                            </a>
-                          </li>
-                        ))}
-                    </ul>
+                              <MdOutlineArrowRight
+                                className={`text-gray-700 group-hover:text-darkRed`}
+                              />
+                              <a
+                                href=""
+                                className={classNames(
+                                  `${mainText} capitalize text-gray-800 font-semibold`,
+                                  transitionLight,
+                                  `group-hover:text-darkRed antialiased break-words whitespace-nowrap `
+                                )}
+                              >
+                                For Iphone Case
+                              </a>
+                            </li>
+                          ))}
+                      </ul>
+                    </div>
                   </div>
                 </div>
                 <div
                   className={classNames(
-                    `w-[75%] max-w-[784px] md:w-[75%] md:max-w-[784px] lg:w-[85%] lg:max-w-[984px] h-full`,
-                    `${containerWrapper}`
+                    `w-[75%] max-w-[784px] md:w-[75%] md:max-w-[784px] lg:w-[90%] lg:max-w-[1084px] `
                   )}
                 >
                   <div
                     className={classNames(
-                      `${XBoxFull} bg-white pt-1 pr-5 ${flexBetween} mb-4`
+                      `${XBoxFull} bg-white pt-1 pr-5 ${flexBetween} mb-4 rounded-lg shadow`
                     )}
                   >
                     <div

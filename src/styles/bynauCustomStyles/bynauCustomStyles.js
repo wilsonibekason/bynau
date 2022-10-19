@@ -64,6 +64,11 @@ export const flexLayout = {
   flexMainChildOneMain: "min-w-[23.5%] w-[23.5%] max-w-[23.5%]",
   flexMainChildThreeMain: "min-w-[23.5%] w-[23.5%] max-w-[23.5%]",
   flexMainChildTwoMain: "min-w-[50%] w-[50%] max-w-[50%]",
+  //
+  flexCompanyLayout: `w-laptop`,
+  flexCompanySectionOne: "w-full max-w-[200px] ",
+  flexCompanySectionTwo:
+    "w-full max-w-[784px]  md:max-w-[784px] lg:max-w-[1084px]",
 };
 export const gridLayout = {
   homeMainLayoutOne: " grid grid-cols-1 lg:grid-cols-12 gap-12",
