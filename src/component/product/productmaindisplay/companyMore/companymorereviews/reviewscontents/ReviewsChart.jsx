@@ -26,7 +26,9 @@ const Progress = () => {
     <>
       <ProgressPrimitive.Root
         value={progress}
-        className={classNames(`h-1 w-seven overflow-hidden bg-bgcolor rounded`)}
+        className={classNames(
+          `h-[2px] w-seven overflow-hidden bg-bgcolor rounded`
+        )}
       >
         <ProgressPrimitive.Indicator
           style={{

@@ -6,6 +6,7 @@ import {
   fontLayout,
   textStyles,
 } from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
+import Feedback from "./reviewscontents/Feedback";
 import ReviewsChart from "./reviewscontents/ReviewsChart";
 
 const CompanyMoreReviews = () => {
@@ -16,7 +17,7 @@ const CompanyMoreReviews = () => {
   return (
     <>
       <div className={classNames(`${XBoxFull} ${flexCol}`)}>
-        <div className={`p-4 ${flexCol} space-y-3`}>
+        <div className={`px-4 pt-4 ${flexCol} space-y-3`}>
           <div
             className={classNames(
               `${mainTextCustom} font-bold capitalize break-words text-ellipsis overflow-hidden tracking-tighter`,
@@ -27,6 +28,9 @@ const CompanyMoreReviews = () => {
           </div>
           {/* Review Chart */}
           <ReviewsChart />
+        </div>
+        <div className={`${XBoxFull} bg-white`}>
+          <Feedback />
         </div>
       </div>
       <div>CompanyMoreReviews</div>
