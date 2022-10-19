@@ -9,6 +9,7 @@ import {
   AiFillAndroid,
   AiOutlineClose,
   AiOutlineMessage,
+  AiOutlineStar,
 } from "react-icons/ai";
 import { BiDownArrow, BiHome, BiPlus } from "react-icons/bi";
 import { GiUsaFlag } from "react-icons/gi";
@@ -69,6 +70,7 @@ export const IconProvider = ({ children }) => {
         MdOutlineArrowRight,
         BiPlus,
         AiOutlineMessage,
+        AiOutlineStar,
         // CiHeart,
         BsCart3,
         FiSearch,

@@ -1,3 +1,10 @@
+export const fontLayout = {
+  span: "break-words text-ellipsis antialiased whitespace-nowarp",
+  p: "",
+  href: "",
+  button: "",
+};
+
 export const textStyles = {
   headingone: "text-3xl text-black font-raleway font-black tracking-tight",
   headingtwo: "text-3xl text-gray-700 font-roboto font-black tracking-wide",
@@ -11,6 +18,7 @@ export const textStyles = {
   mainHeader: "text-md font-arial text-gray-800 font-semibold tracking-wider ",
   mainTextCustom: " tracking-wider font-arial",
 };
+
 const { headingfive, headingfour, mainText, mainTextCustom } = textStyles;
 const styles = {
   NavPadX: "mx-36",
