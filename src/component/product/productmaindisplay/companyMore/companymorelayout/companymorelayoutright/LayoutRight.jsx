@@ -7,16 +7,18 @@ import {
   textStyles,
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
 import { CompanyMoreRightLayoutTabs } from "../../../../../../utils/binauData";
-const LayoutChildTabs = ({ ...props }) => {
+const LayoutChildTabs = ({ name, more }) => {
   const { mainText2 } = textStyles;
   return (
     <>
       <li className={`inline-block`}>
         <div className={classNames(`inline-block ${mainText2} pt-2 pr-3 `)}>
           <span
-            className={classNames(`relative  uppercase border-b-4 py-3.5 `)}
+            className={classNames(
+              `relative  uppercase border-b-4 border-solid border-gray-700 py-3.5 `
+            )}
           >
-            {title} <p>{more}</p>
+            {name} {more}
           </span>
         </div>
       </li>
@@ -42,7 +44,7 @@ const CompanyMoreLayoutRight = () => {
             >
               {/* ACTIVE HAVE A FONT WEIGHT OF 700 */}
               {CompanyMoreRightLayoutTabs.map((item, id) => (
-                <LayoutChildTabs item={item} />
+                <LayoutChildTabs {...item} key={item.id + id} />
               ))}
             </ul>
           </div>
