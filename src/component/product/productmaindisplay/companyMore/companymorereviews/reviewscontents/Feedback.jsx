@@ -7,7 +7,13 @@ import styles, {
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
 
 const Feedback = () => {
-  const { flexCenter, flexCol, flexRowCenter } = flexLayout;
+  const {
+    flexCenter,
+    flexCol,
+    flexRowCenter,
+    flexRowCenterBetween,
+    flexRowBetween,
+  } = flexLayout;
   const { containerWrapper, borderR } = styles;
   const { RiArrowDropDownLine } = useIcon();
   const { mainText, textLayout } = textStyles;
@@ -52,7 +58,12 @@ const Feedback = () => {
           </div>
         </div>
 
-        <div className={classNames(`bg-bgcolor`)}>jffjj</div>
+        <div className={classNames(`bg-bgcolor`)}>
+          <div className={`${flexRowCenterBetween}`}>
+            <div className={classNames(`w-[600px] h-10 `)}>fhfhhfh</div>
+            <div>fjffj</div>
+          </div>
+        </div>
       </div>
     </>
   );
