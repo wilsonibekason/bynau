@@ -391,3 +391,24 @@ export const ShopCategoiesData = [
     id: uuid(),
   },
 ];
+
+export const CompanyMoreRightLayoutTabs = [
+  {
+    name: "description",
+    state: true,
+    more: "",
+    id: uuid(),
+  },
+  {
+    name: "Customer reviews",
+    state: true,
+    more: "232",
+    id: uuid(),
+  },
+  {
+    name: "specification",
+    state: true,
+    more: "",
+    id: uuid(),
+  },
+];

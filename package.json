@@ -13,6 +13,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.2",
     "@reduxjs/toolkit": "^1.8.5",
+    "@shimyshack/tailwindcss-pseudo-element-plugin": "^1.0.4",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "axios": "^0.27.2",
@@ -22,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-infinite-scroll-component": "^6.1.0",
+    "react-redux": "^8.0.4",
     "react-router-dom": "^6.4.1",
     "react-scroll-to-top": "^3.0.0",
     "react-transition-group": "^4.4.5",
@@ -30,6 +32,7 @@
     "redux": "^4.2.0",
     "redux-logger": "^3.0.6",
     "swiper": "^8.4.2",
+    "tailwind-nth-child": "^1.0.1",
     "tailwind-scrollbar": "^2.0.1"
   },
   "devDependencies": {
