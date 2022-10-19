@@ -1,10 +1,35 @@
+import classNames from "classnames";
 import React from "react";
+import { styles } from "../../../../../styles/bynauCustomStyles";
+import {
+  flexLayout,
+  fontLayout,
+  textStyles,
+} from "../../../../../styles/bynauCustomStyles/bynauCustomStyles";
+import ReviewsChart from "./reviewscontents/ReviewsChart";
 
 const CompanyMoreReviews = () => {
+  const { XBoxFull } = styles;
+  const { flexCol } = flexLayout;
+  const { mainTextCustom } = textStyles;
+  const {} = fontLayout;
   return (
     <>
-      <div></div>
-      <div>CompanyMoreReviews</div>;
+      <div className={classNames(`${XBoxFull} ${flexCol}`)}>
+        <div className={`p-4 ${flexCol} space-y-3`}>
+          <div
+            className={classNames(
+              `${mainTextCustom} font-bold capitalize break-words text-ellipsis overflow-hidden tracking-tighter`,
+              `text-md items-start `
+            )}
+          >
+            Customer's Reviews (204)
+          </div>
+          {/* Review Chart */}
+          <ReviewsChart />
+        </div>
+      </div>
+      <div>CompanyMoreReviews</div>
     </>
   );
 };
