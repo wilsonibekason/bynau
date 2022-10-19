@@ -3,6 +3,7 @@ export const fontLayout = {
   p: "",
   href: "",
   button: "",
+  ul: "list-none",
 };
 
 export const textStyles = {
