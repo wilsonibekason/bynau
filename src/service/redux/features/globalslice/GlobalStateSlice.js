@@ -1,9 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import {
-  CompanyMoreDescription,
-  CompanyMoreReviews,
-  CompanySpecifications,
-} from "../../../../component/product/productmaindisplay/companyMore";
+
 const initialState = {
   page: 1,
 };

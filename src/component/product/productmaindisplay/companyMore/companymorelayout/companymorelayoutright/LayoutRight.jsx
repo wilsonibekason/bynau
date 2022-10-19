@@ -8,7 +8,10 @@ import {
   textStyles,
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
 import { CompanyMoreRightLayoutTabs } from "../../../../../../utils/binauData";
-const LayoutChildTabs = ({ name, more, setPage, pageValue }) => {
+import CompanyMoreDescription from "../../companymoredescription/CompanyMoreDesc";
+import CompanyMoreReviews from "../../companymorereviews/CompanyMoreReviews";
+import CompanySpecifications from "../../companymorespecifications/CompanySpecifications";
+const LayoutChildTabs = ({ name, more, setPage, pageValue, page }) => {
   const { mainText2 } = textStyles;
   return (
     <>
@@ -22,7 +25,10 @@ const LayoutChildTabs = ({ name, more, setPage, pageValue }) => {
         >
           <span
             className={classNames(
-              `relative  uppercase border-b-4 border-solid border-gray-700 py-3.5 `
+              `relative  uppercase  py-3.5 `,
+              `${
+                page === pageValue && "border-b-4 border-solid border-gray-700"
+              }`
             )}
           >
             {name} {more}
@@ -61,18 +67,18 @@ const CompanyMoreLayoutRight = () => {
               )}
             >
               {/* ACTIVE HAVE A FONT WEIGHT OF 700 */}
-              {/* {CompanyMoreRightLayoutTabs.map((item, id) => (
+              {CompanyMoreRightLayoutTabs.map((item, id) => (
                 <LayoutChildTabs
                   {...item}
                   key={item.id + id}
                   setPage={setPage}
                   page={page}
                 />
-              ))} */}
+              ))}
             </ul>
           </div>
           {/* layout Body */}
-          <div>{DisplayPages}</div>
+          <div>{DisplayPages()}</div>
         </div>
       </div>
     </>
