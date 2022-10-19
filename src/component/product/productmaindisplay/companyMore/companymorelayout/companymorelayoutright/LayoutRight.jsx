@@ -4,6 +4,7 @@ import { useIcon } from "../../../../../../hooks/stateContext/IconContextProvide
 import { styles } from "../../../../../../styles/bynauCustomStyles";
 import {
   flexLayout,
+  fontLayout,
   fontStyles,
   textStyles,
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
@@ -13,9 +14,12 @@ import CompanyMoreReviews from "../../companymorereviews/CompanyMoreReviews";
 import CompanySpecifications from "../../companymorespecifications/CompanySpecifications";
 const LayoutChildTabs = ({ name, more, setPage, pageValue, page }) => {
   const { mainText2 } = textStyles;
+  const { transitionLinear } = styles;
+  const { li } = fontLayout;
+
   return (
     <>
-      <li className={`inline-block`}>
+      <li className={`inline-block ${li}`}>
         <div
           className={classNames(`inline-block ${mainText2} pt-2 pr-3 `)}
           onClick={(e) => {
@@ -29,7 +33,8 @@ const LayoutChildTabs = ({ name, more, setPage, pageValue, page }) => {
               `${
                 page === pageValue &&
                 "border-b-4 border-solid border-gray-700 font-bold"
-              }`
+              }`,
+              `${transitionLinear}`
             )}
           >
             {name} {more}
@@ -40,9 +45,9 @@ const LayoutChildTabs = ({ name, more, setPage, pageValue, page }) => {
   );
 };
 const CompanyMoreLayoutRight = () => {
-  const {} = styles;
-  const {} = flexLayout;
-  const { mainText2 } = textStyles;
+  const { transitionLinear } = styles;
+  const { flexRowBetween } = flexLayout;
+  const { mainText2, mainText } = textStyles;
   const {} = fontStyles;
   const { page, setPage } = useIcon();
 
@@ -60,11 +65,17 @@ const CompanyMoreLayoutRight = () => {
       <div className={classNames(`w-full rounded-md bg-white`)}>
         <div className={classNames(`max-w-[984px] w-full`)}>
           {/* layout Header Tabs */}
-          <div>
+          <div
+            className={classNames(
+              `${flexRowBetween} items-center`,
+              `border-b border-solid border-[#d8d8d8]`
+            )}
+          >
             <ul
               className={classNames(
                 `border-b border-solid border-[#d8d8d8]`,
-                `select-none list-none h-11`
+                `select-none list-none h-11`,
+                `space-x-3`
               )}
             >
               {/* ACTIVE HAVE A FONT WEIGHT OF 700 */}
@@ -77,6 +88,13 @@ const CompanyMoreLayoutRight = () => {
                 />
               ))}
             </ul>
+            <div className={``}>
+              <p
+                className={`${mainText} hover:text-darkRed cursor-pointer ${transitionLinear} `}
+              >
+                Review Item
+              </p>
+            </div>
           </div>
           {/* layout Body */}
           <div>{DisplayPages()}</div>

@@ -4,6 +4,7 @@ export const fontLayout = {
   href: "",
   button: "",
   ul: "list-none",
+  li: "cursor-pointer",
 };
 
 export const textStyles = {
@@ -38,6 +39,7 @@ const styles = {
   borderMain: "border-t border-gray-300 w-28 h-1",
   transition: "transition-all ease-in-out duration-600 delay-300",
   transitionLight: "transition-all ease-in-out duration-300 delay-100",
+  transitionLinear: "transition ease-linear duration-300 dalay-100",
   imageCustom: "w-full h-full object-contain ",
   buttonCustom: `${mainTextCustom} shadow font-semibold text-sm`,
   testContainer: "border-2 border-solid border-red-500 h-20 rounded",
