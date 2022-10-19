@@ -24,6 +24,7 @@ export const textStyles = {
 
 const { headingfive, headingfour, mainText, mainTextCustom } = textStyles;
 const styles = {
+  fullBox: "w-full h-full",
   NavPadX: "mx-36",
   NavPadY: "my-4",
   homeMainMX: "ml-40 mr-16",

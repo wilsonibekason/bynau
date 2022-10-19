@@ -14,8 +14,8 @@ const Feedback = () => {
     flexRowCenterBetween,
     flexRowBetween,
   } = flexLayout;
-  const { containerWrapper, borderR } = styles;
-  const { RiArrowDropDownLine } = useIcon();
+  const { containerWrapper, borderR, fullBox } = styles;
+  const { RiArrowDropDownLine, MdOutlineCheckBoxOutlineBlank } = useIcon();
   const { mainText, textLayout } = textStyles;
   //:TODO: // add Rafdix dropdown UI
   return (
@@ -23,7 +23,7 @@ const Feedback = () => {
       <div className={classNames(`${flexCol} space-y-px`)}>
         {/*  */}
         <div className={`bg-bgcolor`}>
-          <div className={classNames(``, `h-10 w-[700px] `, ` px-2`)}>
+          <div className={classNames(``, `h-10 w-[700px] `, ` px-3`)}>
             <div
               className={classNames(`${flexRowCenter} h-full w-full space-x-4`)}
             >
@@ -58,10 +58,36 @@ const Feedback = () => {
           </div>
         </div>
 
-        <div className={classNames(`bg-bgcolor`)}>
-          <div className={`${flexRowCenterBetween}`}>
-            <div className={classNames(`w-[600px] h-10 `)}>fhfhhfh</div>
-            <div>fjffj</div>
+        <div className={classNames(`bg-bgcolor h-10`)}>
+          <div className={`${flexRowCenterBetween} h-full px-3`}>
+            <div className={classNames(`w-[600px] h-full `)}>
+              <div className={classNames(`${flexRowCenter} w-full h-full`)}>
+                <div className={classNames(`h-8 w-40 whitespace-nowrap`)}>
+                  <div className={`${flexRowCenter} ${fullBox} space-x-1`}>
+                    <MdOutlineCheckBoxOutlineBlank />
+                    <p className={`${mainText}`}>Only from your country</p>
+                  </div>
+                </div>
+                <div className={classNames(`h-8 w-40 whitespace-nowrap`)}>
+                  <div className={`${flexRowCenter} ${fullBox} space-x-1`}>
+                    <MdOutlineCheckBoxOutlineBlank />
+                    <p className={`${mainText}`}>Translate to english</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={`w-[150px]`}>
+              <div className={`${flexCenter}`}>
+                <div
+                  className={`h-8 w-full  whitespace-nowrap border border-solid rounded border-darkWhite p-2`}
+                >
+                  <div className={classNames(`${flexRowCenterBetween} h-full`)}>
+                    <p className={`${mainText} whitespace-nowrap`}>Sort by</p>
+                    <RiArrowDropDownLine />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

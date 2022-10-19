@@ -30,6 +30,7 @@ import {
   MdComputer,
   MdOutlineToys,
   MdOutlineSportsVolleyball,
+  MdOutlineCheckBoxOutlineBlank,
 } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
 import { IoMdMan, IoMdWoman, IoMdPhonePortrait } from "react-icons/io";
@@ -74,6 +75,7 @@ export const IconProvider = ({ children }) => {
         AiOutlineMessage,
         AiOutlineStar,
         ImStarFull,
+        MdOutlineCheckBoxOutlineBlank,
         // CiHeart,
         BsCart3,
         FiSearch,
