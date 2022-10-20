@@ -35,9 +35,13 @@ const CompanyMoreReviews = () => {
           <Feedback />
         </div>
         <div className={classNames(`${XBoxFull}`)}>
-          <ReviewsComments />
+          {Array(10)
+            .fill()
+            .map((i) => (
+              <ReviewsComments key={i} />
+            ))}
         </div>
-        <div>
+        <div className={`${XBoxFull}`}>
           <ReviewsPagination />
         </div>
       </div>
