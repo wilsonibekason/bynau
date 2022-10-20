@@ -13,7 +13,7 @@ const ReviewsComments = () => {
     flexLayout;
   const { containerWrapper, fullBox, transitionLinear } = styles;
   const {} = fontLayout;
-  const { AiFillStar } = useIcon();
+  const { AiFillStar, IoIosArrowBack, IoIosArrowForward  } = useIcon();
   return (
     <>
       <div className={`${flexCol}`}>

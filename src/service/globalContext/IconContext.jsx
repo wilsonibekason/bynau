@@ -33,7 +33,13 @@ import {
   MdOutlineCheckBoxOutlineBlank,
 } from "react-icons/md";
 import { FiSearch } from "react-icons/fi";
-import { IoMdMan, IoMdWoman, IoMdPhonePortrait } from "react-icons/io";
+import {
+  IoMdMan,
+  IoMdWoman,
+  IoMdPhonePortrait,
+  IoIosArrowBack,
+  IoIosArrowForward,
+} from "react-icons/io";
 import { GiJeweledChalice, GiMirrorMirror, GiTyre } from "react-icons/gi";
 import { SiStmicroelectronics } from "react-icons/si";
 import { VscTools } from "react-icons/vsc";
@@ -52,7 +58,7 @@ import {
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { GrStar } from "react-icons/gr";
-import { HiMinus } from "react-icons/hi";
+import { HiMinus, HiOutlineDotsHorizontal } from "react-icons/hi";
 import { ImStarFull } from "react-icons/im";
 // import {CiHeart} from "react-icons/"
 
@@ -76,6 +82,9 @@ export const IconProvider = ({ children }) => {
         AiOutlineStar,
         ImStarFull,
         MdOutlineCheckBoxOutlineBlank,
+        IoIosArrowForward,
+        IoIosArrowBack,
+        HiOutlineDotsHorizontal,
         // CiHeart,
         BsCart3,
         FiSearch,

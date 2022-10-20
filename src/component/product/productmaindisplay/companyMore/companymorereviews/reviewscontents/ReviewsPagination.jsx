@@ -6,14 +6,19 @@ import styles, {
   fontLayout,
   textStyles,
 } from "../../../../../../styles/bynauCustomStyles/bynauCustomStyles";
-const PaginationItems = ({ value, active }) => {
+const PaginationItems = ({ value, active, isCollapsed }) => {
   const { flexCenter } = flexLayout;
   return (
     <>
       <div
         className={classNames(
-          `h-eight w-8 border ${flexCenter} rounded cursor-pointer`,
-          `${active && "bg-darkRed text-white"}`
+          `h-eight w-8  ${flexCenter} rounded  `,
+          `${
+            active
+              ? "bg-darkRed text-white cursor-default"
+              : "bg-bgcolor cursor-pointer "
+          }`,
+          `${isCollapsed ? "bg-white" : "bg-bgcolor border"}`
         )}
       >
         <p>{value}</p>
@@ -26,7 +31,12 @@ const ReviewsPagination = () => {
   const { containerWrapper, YBoxFull, XBoxFull, fullBox } = styles;
   const {} = textStyles;
   const {} = fontLayout;
-  const { MdOutlineArrowRight } = useIcon();
+  const {
+    MdOutlineArrowRight,
+    IoIosArrowBack,
+    IoIosArrowForward,
+    HiOutlineDotsHorizontal,
+  } = useIcon();
   return (
     <>
       <div className={`h-20 w-full `}>
@@ -39,21 +49,26 @@ const ReviewsPagination = () => {
                     `${flexRowCenter} justify-center space-x-2 h-full whitespace-nowrap overflow-hidden`
                   )}
                 >
-                  <div
-                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer`}
+                  <button
+                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer bg-bgcolor disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed`}
+                    disabled={true}
                   >
-                    <MdOutlineArrowRight />
-                  </div>
+                    <IoIosArrowBack className={classNames(`text-current`)} />
+                  </button>
                   <PaginationItems value={1} active={true} />
                   <PaginationItems value={2} />
                   <PaginationItems value={3} />
                   <PaginationItems value={4} />
-                  <PaginationItems value={"..."} />
-                  <div
-                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer`}
+                  <PaginationItems
+                    value={<HiOutlineDotsHorizontal />}
+                    isCollapsed={true}
+                  />
+                  <button
+                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer bg-bgcolor `}
+                    // disabled={true}
                   >
-                    <MdOutlineArrowRight />
-                  </div>
+                    <IoIosArrowForward />
+                  </button>
                 </div>
               </div>
             </div>
