@@ -66,6 +66,7 @@ export const flexLayout = {
   flexAround: "flex flex-row justify-around",
   flexEvenly: "flex flex-row justify-evenly",
   flexCenter: "flex justify-center items-center",
+  flexJusEnd: "flex justify-end",
   flexCol: "flex flex-col",
   flexColCenter: "flex flex-col items-center",
   flexColBetween: "flex flex-col justify-between",

@@ -41,7 +41,7 @@ const CompanyMoreReviews = () => {
               <ReviewsComments key={i} />
             ))}
         </div>
-        <div className={`${XBoxFull}`}>
+        <div className={`${XBoxFull} bg-white`}>
           <ReviewsPagination />
         </div>
       </div>
