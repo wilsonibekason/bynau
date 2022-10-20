@@ -18,7 +18,7 @@ const ReviewsComments = () => {
     <>
       <div className={`${flexCol}`}>
         <div className={`${flexRow}`}>
-          <div className={`w-[150px] h-40 ${containerWrapper} text-xs py-2`}>
+          <div className={`w-[150px] h-40  text-xs py-4`}>
             {" "}
             <div className={`${fullBox} ${flexCol} space-y-3`}>
               <p className={`${mainText} ${textLayout} font-bold`}>
@@ -35,7 +35,7 @@ const ReviewsComments = () => {
               </div>
             </div>
           </div>
-          <div className={` w-[950px] h-40 ${containerWrapper}`}>
+          <div className={` w-[950px] h-40 py-4 `}>
             <div className={classNames(`${fullBox} `)}>
               <div className={classNames(`h-32 w-full `)}>
                 <div className={`h-full max-h-full ${flexCol} space-y-4`}>
@@ -81,11 +81,11 @@ const ReviewsComments = () => {
                   <div
                     className={`items-start ${flexRowCenter} space-x-3 ${mainText}`}
                   >
-                    <p className={classNames(`font-medium`)}>
+                    <p className={classNames(`font-medium`, `${textLayout}`)}>
                       A beautiful product that covers all aspects of the device
                       and gives full protection to the device{" "}
                     </p>
-                    <p className={`text-darkWhite font-medium`}>
+                    <p className={`text-darkWhite font-medium ${textLayout}`}>
                       16 Oct 2022 10:09
                     </p>
                   </div>
@@ -109,7 +109,7 @@ const ReviewsComments = () => {
                             <a className={``}>
                               <img
                                 className={classNames(
-                                  `absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] align-middle`,
+                                  `absolute max-w-full max-h-full top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] align-middle`,
                                   `${transitionLinear}`
                                 )}
                                 src="https://ae01.alicdn.com/kf/Ae0737dd5ecc6447ab80de52323cbb8b0w.jpg"

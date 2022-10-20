@@ -12,7 +12,7 @@ const PaginationItems = ({ value, active }) => {
     <>
       <div
         className={classNames(
-          `h-eight w-8 border ${flexCenter} rounded`,
+          `h-eight w-8 border ${flexCenter} rounded cursor-pointer`,
           `${active && "bg-darkRed text-white"}`
         )}
       >
@@ -29,17 +29,19 @@ const ReviewsPagination = () => {
   const { MdOutlineArrowRight } = useIcon();
   return (
     <>
-      <div className={`h-20 w-full ${containerWrapper}`}>
+      <div className={`h-20 w-full `}>
         <div className={classNames(`${fullBox} `)}>
           <div className={`${flexJusEnd} h-full flex items-center`}>
-            <div className={classNames(` h-12 w-[250px] border`)}>
+            <div className={classNames(` h-12 w-[250px] `)}>
               <div className={classNames(`${fullBox}`)}>
                 <div
                   className={classNames(
                     `${flexRowCenter} justify-center space-x-2 h-full whitespace-nowrap overflow-hidden`
                   )}
                 >
-                  <div className={`h-eight w-8 border rounded ${flexCenter} `}>
+                  <div
+                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer`}
+                  >
                     <MdOutlineArrowRight />
                   </div>
                   <PaginationItems value={1} active={true} />
@@ -47,7 +49,9 @@ const ReviewsPagination = () => {
                   <PaginationItems value={3} />
                   <PaginationItems value={4} />
                   <PaginationItems value={"..."} />
-                  <div className={`h-eight w-8 border rounded ${flexCenter}`}>
+                  <div
+                    className={`h-eight w-8 border rounded ${flexCenter} cursor-pointer`}
+                  >
                     <MdOutlineArrowRight />
                   </div>
                 </div>
