@@ -26,7 +26,7 @@ const PaginationItems = ({ value, active, isCollapsed }) => {
     </>
   );
 };
-const ReviewsPagination = () => {
+const ReviewsPagination = ({ comments, setComments }) => {
   const { flexJusEnd, flexRowCenter, flexCenter } = flexLayout;
   const { containerWrapper, YBoxFull, XBoxFull, fullBox } = styles;
   const {} = textStyles;

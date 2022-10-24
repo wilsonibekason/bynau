@@ -10,11 +10,36 @@ import Feedback from "./reviewscontents/Feedback";
 import ReviewsChart from "./reviewscontents/ReviewsChart";
 import ReviewsComments from "./reviewscontents/ReviewsComments";
 import ReviewsPagination from "./reviewscontents/ReviewsPagination";
-
+const DisplayReviews = () => {
+  const { XBoxFull } = styles;
+  return (
+    <>
+      <div className={classNames(`${XBoxFull}`)}>
+        {Array(10)
+          .fill()
+          .map((i) => (
+            <ReviewsComments key={i} />
+          ))}
+      </div>
+    </>
+  );
+};
 const CompanyMoreReviews = () => {
   const { XBoxFull } = styles;
   const { flexCol } = flexLayout;
   const { mainTextCustom } = textStyles;
+  const [comments, setComments] = React.useState(1);
+  const PopulateReviews = () => {
+    if (comments === 1) {
+      return <DisplayReviews />;
+    } else if (comments === 2) {
+      return <DisplayReviews />;
+    } else if (comments === 3) {
+      return <DisplayReviews />;
+    } else {
+      return <DisplayReviews />;
+    }
+  };
   const {} = fontLayout;
   return (
     <>
@@ -34,15 +59,18 @@ const CompanyMoreReviews = () => {
         <div className={`${XBoxFull} bg-white`}>
           <Feedback />
         </div>
-        <div className={classNames(`${XBoxFull}`)}>
+        {/* display Comments*/}
+        {PopulateReviews()}
+        {/* display Comments*/}
+        {/* <div className={classNames(`${XBoxFull}`)}>
           {Array(10)
             .fill()
             .map((i) => (
               <ReviewsComments key={i} />
             ))}
-        </div>
+        </div> */}
         <div className={`${XBoxFull} bg-white`}>
-          <ReviewsPagination />
+          <ReviewsPagination comments={comments} setComments={setComments} />
         </div>
       </div>
       <div>CompanyMoreReviews</div>
