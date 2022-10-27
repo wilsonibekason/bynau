@@ -1,4 +1,6 @@
 import React from "react";
+import uuid from "react-uuid";
+import { useNavigate } from "react-router-dom";
 import { useIcon } from "../../../../../../hooks/stateContext/IconContextProvider";
 import { styles } from "../../../../../../styles/bynauCustomStyles";
 import {
@@ -11,11 +13,13 @@ const HomeProductMainCard = () => {
   const { mainText, mainTextCustom } = textStyles;
   const { flexCol, flexRowCenter } = flexLayout;
   const { FaCrown, AiFillStar } = useIcon();
+  const navigate = useNavigate();
 
   return (
     <>
       <div
-        className={`w-[16%] h-[350px] shadow-sm hover:shadow-lg rounded-lg bg-white`}
+        className={`w-[16%] h-[350px] shadow-sm hover:shadow-lg rounded-lg bg-white `}
+        onClick={() => navigate(`/item/${uuid()}`, { replace: true })}
       >
         <div className={`${boxFull} ${flexCol}`}>
           <div className={`w-full h-six bg-bgcolor rounded-t-lg p-px`}>

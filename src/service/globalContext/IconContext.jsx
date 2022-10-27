@@ -23,6 +23,7 @@ import {
   BsInstagram,
   BsPlus,
   BsHeart,
+  BsWhatsapp,
 } from "react-icons/bs";
 import {
   MdOutlinePerson,
@@ -57,7 +58,7 @@ import {
   FaFacebookSquare,
 } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { GrStar } from "react-icons/gr";
+import { GrStar, GrFacebookOption } from "react-icons/gr";
 import { HiMinus, HiOutlineDotsHorizontal } from "react-icons/hi";
 import { ImStarFull } from "react-icons/im";
 // import {CiHeart} from "react-icons/"
@@ -85,6 +86,8 @@ export const IconProvider = ({ children }) => {
         IoIosArrowForward,
         IoIosArrowBack,
         HiOutlineDotsHorizontal,
+        GrFacebookOption,
+        BsWhatsapp,
         // CiHeart,
         BsCart3,
         FiSearch,

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 import { logo } from "../../../../assets/homeassets";
 import { useIcons } from "../../../../service/globalContext/IconContext";
 import styles, {
@@ -20,13 +21,14 @@ const ProductNavbar = () => {
   } = flexLayout;
   const {} = colorStyles;
   const { BiDownArrow, BsPlus, BsCart3, FiSearch } = useIcons();
+  const navigate = useNavigate();
   return (
     <>
       <div className={`${marginXlayout}`}>
         <div className={`${XBoxFull}`}>
           <div className={`${flexRowBetween}`}>
             <div className={`${flexRowCenter} py-5 space-x-3`}>
-              <div className={`w-44 -my-6 -mx-2`}>
+              <Link to={`/`} className={`w-44 -my-6 -mx-2`}>
                 <img
                   src={logo}
                   alt=""
@@ -34,7 +36,7 @@ const ProductNavbar = () => {
                   width={800}
                   height={400}
                 />
-              </div>
+              </Link>
               <div className={`${borderR3} w-2 h-10`} />
               <div className={`${flexCol} space-y-2`}>
                 <div className={`${flexRowCenter} space-x-1`}>

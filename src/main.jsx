@@ -13,9 +13,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Router>
       <Provider store={store}>
         <IconProvider>
-          {/* <ScrollToTop> */}
-          <App />
-          {/* </ScrollToTop> */}
+          <ScrollToTop>
+            <App />
+          </ScrollToTop>
         </IconProvider>
       </Provider>
     </Router>
