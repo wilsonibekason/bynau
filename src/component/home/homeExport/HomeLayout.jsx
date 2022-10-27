@@ -11,9 +11,8 @@ const HomeLayout = ({ children }) => {
     <>
       <div className={`${flexRowReverse}`}>
         {/* sidebar container */}
-        <div className={`w-10 h-screen bg-black fixed`}>
+        <div className={`w-10 h-screen bg-darkRed fixed`}>
           {/* render the sidebar component */}
-          {/* <h1 className={`text-3xl text-white font-bold font-simsun`}>helo </h1> */}
           <HomeSidebar />
         </div>
         <div>
