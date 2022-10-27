@@ -4,12 +4,14 @@ import { HomeBanner } from "../homeBanner";
 import { HomeFooterLayout } from "../homefooter";
 import { HomeNavbar } from "../homeNavbar";
 import HomeSidebar from "../homesidebar/HomeSidebar";
+import NotResponsive from "./NotResponsive";
 
 const HomeLayout = ({ children }) => {
   const { flexRowReverse } = flexLayout;
   return (
     <>
-      <div className={`${flexRowReverse}`}>
+      <NotResponsive />
+      <div className={`${flexRowReverse} hidden md:hidden lg:flex xl:flex`}>
         {/* sidebar container */}
         <div className={`w-10 h-screen bg-darkRed fixed`}>
           {/* render the sidebar component */}
@@ -18,7 +20,7 @@ const HomeLayout = ({ children }) => {
         <div>
           <HomeBanner />
           <HomeNavbar />
-          <div>{children}</div>
+          <div className=" max-w-[1500px] mx-auto">{children}</div>
           <div>
             <footer className={``}>
               <HomeFooterLayout />
